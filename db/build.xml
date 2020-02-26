@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project basedir="." default="all" name="setup-db">
+
+  <target name="drop-tables">
+    <echo message="Drop tables using: ${postgresql.driver} ${postgresql.localhost}" />
+
+    <sql classpath="${postgresql.classpath}"
+         driver="${postgresql.driver}"
+         url="${postgresql.localhost}"
+         userid="${postgresql.user}"
+         password="${postgresql.password}"
+         autocommit="True"
+         src="${db.dir}/drop-tables.sql">
+    </sql>
+  </target>
+
+  <target name="drop-db">
+    <echo message="Drop db using: ${postgresql.driver} ${postgresql.localhost}" />
+
+    <sql classpath="${postgresql.classpath}"
+         driver="${postgresql.driver}"
+         url="${postgresql.localhost}"
+         userid="${postgresql.user}"
+         password="${postgresql.password}"
+         autocommit="True"
+         src="${db.dir}/drop-db.sql">
+    </sql>
+  </target>
+
+  <target name="create-db">
+    <echo message="Create db using: ${postgresql.driver} ${postgresql.localhost}" />
+
+    <sql classpath="${postgresql.classpath}"
+         driver="${postgresql.driver}"
+         url="${postgresql.localhost}"
+         userid="${postgresql.user}"
+         password="${postgresql.password}"
+         autocommit="True"
+         src="${db.dir}/create-db.sql">
+    </sql>
+  </target>
+
+  <target name="init-db">
+    <echo message="Init db using: ${postgresql.driver} ${postgresql.localhost}" />
+
+    <sql classpath="${postgresql.classpath}"
+         driver="${postgresql.driver}"
+         url="${postgresql.localhost}${postgresql.database}"
+         userid="${postgresql.user}"
+         password="${postgresql.password}"
+         autocommit="True"
+         src="${db.dir}/init-db.sql">
+    </sql>
+  </target>
+
+  <target name="populate-db">
+    <echo message="Populate db using: ${postgresql.driver} ${postgresql.localhost}" />
+
+    <sql classpath="${postgresql.classpath}"
+         driver="${postgresql.driver}"
+         url="${postgresql.localhost}${postgresql.database}"
+         userid="${postgresql.user}"
+         password="${postgresql.password}"
+         autocommit="True"
+         src="${db.dir}/populate-db.sql">
+    </sql>
+  </target>
+
+  <target name="all" depends="drop-tables, drop-db, create-db, init-db, populate-db"/>
+
+</project>

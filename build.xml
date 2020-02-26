@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project basedir="." default="setup-db" name="personnel">
+
+  <property file="build.properties"/>
+
+  <target name="setup-db">
+    <ant antfile="${db.dir}/build.xml"/>
+  </target>
+
+</project>
