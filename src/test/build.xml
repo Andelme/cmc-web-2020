@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project basedir="." default="run-tests" name="run-tests">
+
+    <property file="../../build.properties"/>
+
+    <path id="test.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+        <pathelement location="${build.dir}"/>
+    </path>
+
+    <taskdef name="testng" classname="org.testng.TestNGAntTask" classpath="${testng.classpath}"/>
+
+    <target name="run-tests">
+        <mkdir dir="${report.dir}"/>
+
+        <testng classpathref="test.classpath" outputdir="${report.dir}">
+            <xmlfileset dir="${test.dir}" includes="testng.xml"/>
+        </testng>
+    </target>
+
+</project>
