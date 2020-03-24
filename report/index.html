@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PersonnelSuite" class="navigator-link">
+              <span class="suite-name border-passed">PersonnelSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PersonnelSuite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PersonnelSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PersonnelSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PersonnelSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PersonnelSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PersonnelSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PersonnelSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PersonnelSuite" class="hide-methods passed suite-PersonnelSuite"> (hide)</a> <!-- hide-methods passed suite-PersonnelSuite -->
+                      <a href="#" panel-name="suite-PersonnelSuite" class="show-methods passed suite-PersonnelSuite"> (show)</a> <!-- show-methods passed suite-PersonnelSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-PersonnelSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.DepartmentTest" class="method navigator-link" hash-for-method="addDepartment">addDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.PositionTypeTest" class="method navigator-link" hash-for-method="addPositionType">addPositionType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkPositionTest" class="method navigator-link" hash-for-method="addWorkPosition">addWorkPosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkerTest" class="method navigator-link" hash-for-method="addWorker">addWorker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.DepartmentTest" class="method navigator-link" hash-for-method="deleteDepartment">deleteDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.PositionTypeTest" class="method navigator-link" hash-for-method="deletePositionType">deletePositionType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkPositionTest" class="method navigator-link" hash-for-method="deleteWorkPosition">deleteWorkPosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkerTest" class="method navigator-link" hash-for-method="deleteWorker">deleteWorker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.DepartmentTest" class="method navigator-link" hash-for-method="getDepartment">getDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.PositionTypeTest" class="method navigator-link" hash-for-method="getPositionType">getPositionType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkPositionTest" class="method navigator-link" hash-for-method="getWorkPosition">getWorkPosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkerTest" class="method navigator-link" hash-for-method="getWorker">getWorker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.DepartmentTest" class="method navigator-link" hash-for-method="updateDepartment">updateDepartment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.PositionTypeTest" class="method navigator-link" hash-for-method="updatePositionType">updatePositionType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkPositionTest" class="method navigator-link" hash-for-method="updateWorkPosition">updateWorkPosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PersonnelSuite" title="test.WorkerTest" class="method navigator-link" hash-for-method="updateWorker">updateWorker</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PersonnelSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PersonnelSuite" class="panel PersonnelSuite">
+          <div class="suite-PersonnelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.WorkerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addWorker">
+                  </a> <!-- addWorker -->
+                  <span class="method-name">addWorker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteWorker">
+                  </a> <!-- deleteWorker -->
+                  <span class="method-name">deleteWorker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWorker">
+                  </a> <!-- getWorker -->
+                  <span class="method-name">getWorker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorker">
+                  </a> <!-- updateWorker -->
+                  <span class="method-name">updateWorker</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PersonnelSuite-class-passed -->
+          <div class="suite-PersonnelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.WorkPositionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addWorkPosition">
+                  </a> <!-- addWorkPosition -->
+                  <span class="method-name">addWorkPosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteWorkPosition">
+                  </a> <!-- deleteWorkPosition -->
+                  <span class="method-name">deleteWorkPosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWorkPosition">
+                  </a> <!-- getWorkPosition -->
+                  <span class="method-name">getWorkPosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkPosition">
+                  </a> <!-- updateWorkPosition -->
+                  <span class="method-name">updateWorkPosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PersonnelSuite-class-passed -->
+          <div class="suite-PersonnelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.PositionTypeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPositionType">
+                  </a> <!-- addPositionType -->
+                  <span class="method-name">addPositionType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePositionType">
+                  </a> <!-- deletePositionType -->
+                  <span class="method-name">deletePositionType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPositionType">
+                  </a> <!-- getPositionType -->
+                  <span class="method-name">getPositionType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePositionType">
+                  </a> <!-- updatePositionType -->
+                  <span class="method-name">updatePositionType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PersonnelSuite-class-passed -->
+          <div class="suite-PersonnelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.DepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDepartment">
+                  </a> <!-- addDepartment -->
+                  <span class="method-name">addDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDepartment">
+                  </a> <!-- deleteDepartment -->
+                  <span class="method-name">deleteDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDepartment">
+                  </a> <!-- getDepartment -->
+                  <span class="method-name">getDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDepartment">
+                  </a> <!-- updateDepartment -->
+                  <span class="method-name">updateDepartment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PersonnelSuite-class-passed -->
+        </div> <!-- panel PersonnelSuite -->
+        <div panel-name="test-xml-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/Anselm/web-prac/src/test/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;PersonnelSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PersonnelTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.WorkerTest&quot;/&gt;
+      &lt;class name=&quot;test.PositionTypeTest&quot;/&gt;
+      &lt;class name=&quot;test.DepartmentTest&quot;/&gt;
+      &lt;class name=&quot;test.WorkPositionTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PersonnelTest --&gt;
+&lt;/suite&gt; &lt;!-- PersonnelSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PersonnelSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PersonnelTest (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PersonnelSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PersonnelSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PersonnelSuite');
+function tableData_PersonnelSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getWorker')
+data.setCell(0, 2, 'test.WorkerTest')
+data.setCell(0, 3, 141);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getWorkPosition')
+data.setCell(1, 2, 'test.WorkPositionTest')
+data.setCell(1, 3, 35);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addWorker')
+data.setCell(2, 2, 'test.WorkerTest')
+data.setCell(2, 3, 17);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getDepartment')
+data.setCell(3, 2, 'test.DepartmentTest')
+data.setCell(3, 3, 15);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteWorker')
+data.setCell(4, 2, 'test.WorkerTest')
+data.setCell(4, 3, 6);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getPositionType')
+data.setCell(5, 2, 'test.PositionTypeTest')
+data.setCell(5, 3, 6);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deleteWorkPosition')
+data.setCell(6, 2, 'test.WorkPositionTest')
+data.setCell(6, 3, 6);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'updateWorker')
+data.setCell(7, 2, 'test.WorkerTest')
+data.setCell(7, 3, 5);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addWorkPosition')
+data.setCell(8, 2, 'test.WorkPositionTest')
+data.setCell(8, 3, 4);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addDepartment')
+data.setCell(9, 2, 'test.DepartmentTest')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'updateWorkPosition')
+data.setCell(10, 2, 'test.WorkPositionTest')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'deleteDepartment')
+data.setCell(11, 2, 'test.DepartmentTest')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'addPositionType')
+data.setCell(12, 2, 'test.PositionTypeTest')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'deletePositionType')
+data.setCell(13, 2, 'test.PositionTypeTest')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateDepartment')
+data.setCell(14, 2, 'test.DepartmentTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'updatePositionType')
+data.setCell(15, 2, 'test.PositionTypeTest')
+data.setCell(15, 3, 1);
+window.suiteTableData['PersonnelSuite']= { tableData: data, tableDiv: 'times-div-PersonnelSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 251 ms</span>
+              <div id="times-div-PersonnelSuite">
+              </div> <!-- times-div-PersonnelSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PersonnelSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PersonnelSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.WorkerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupSession</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setDAO</span>
+                <span class="method-start">1482 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getWorker</span>
+                <span class="method-start">1488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addWorker</span>
+                <span class="method-start">1632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorker</span>
+                <span class="method-start">1650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteWorker</span>
+                <span class="method-start">1655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">1661 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.PositionTypeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupSession</span>
+                <span class="method-start">1669 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setDAO</span>
+                <span class="method-start">1843 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getPositionType</span>
+                <span class="method-start">1844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPositionType</span>
+                <span class="method-start">1851 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePositionType</span>
+                <span class="method-start">1855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePositionType</span>
+                <span class="method-start">1857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">1859 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.DepartmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupSession</span>
+                <span class="method-start">1861 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setDAO</span>
+                <span class="method-start">2020 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getDepartment</span>
+                <span class="method-start">2022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addDepartment</span>
+                <span class="method-start">2038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDepartment</span>
+                <span class="method-start">2042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteDepartment</span>
+                <span class="method-start">2043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">2046 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.WorkPositionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupSession</span>
+                <span class="method-start">2047 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setDAO</span>
+                <span class="method-start">2184 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getWorkPosition</span>
+                <span class="method-start">2187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addWorkPosition</span>
+                <span class="method-start">2222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkPosition</span>
+                <span class="method-start">2227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteWorkPosition</span>
+                <span class="method-start">2231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">2237 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

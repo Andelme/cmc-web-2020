@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-24T14:07:22Z" name="PersonnelSuite" finished-at="2020-03-24T14:07:25Z" duration-ms="2244">
+    <groups>
+    </groups>
+    <test started-at="2020-03-24T14:07:22Z" name="PersonnelTest" finished-at="2020-03-24T14:07:25Z" duration-ms="2244">
+      <class name="test.PositionTypeTest">
+        <test-method is-config="true" signature="setupSession()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="setupSession" finished-at="2020-03-24T14:07:24Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSession -->
+        <test-method is-config="true" signature="setDAO()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="setDAO" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.GenericTest.setupSession" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDAO -->
+        <test-method signature="getPositionType()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="getPositionType" finished-at="2020-03-24T14:07:24Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPositionType -->
+        <test-method signature="addPositionType()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="addPositionType" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.PositionTypeTest.getPositionType" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPositionType -->
+        <test-method signature="updatePositionType()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="updatePositionType" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.PositionTypeTest.addPositionType" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePositionType -->
+        <test-method signature="deletePositionType()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="deletePositionType" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.PositionTypeTest.updatePositionType" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePositionType -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:test.PositionTypeTest@26a7b76d]" started-at="2020-03-24T14:07:24Z" name="closeSession" finished-at="2020-03-24T14:07:24Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- test.PositionTypeTest -->
+      <class name="test.WorkerTest">
+        <test-method is-config="true" signature="setupSession()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:22Z" name="setupSession" finished-at="2020-03-24T14:07:24Z" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSession -->
+        <test-method is-config="true" signature="setDAO()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="setDAO" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.GenericTest.setupSession" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDAO -->
+        <test-method signature="getWorker()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="getWorker" finished-at="2020-03-24T14:07:24Z" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWorker -->
+        <test-method signature="addWorker()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="addWorker" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.WorkerTest.getWorker" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWorker -->
+        <test-method signature="updateWorker()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="updateWorker" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.WorkerTest.addWorker" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateWorker -->
+        <test-method signature="deleteWorker()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="deleteWorker" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.WorkerTest.updateWorker" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteWorker -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:test.WorkerTest@7a9273a8]" started-at="2020-03-24T14:07:24Z" name="closeSession" finished-at="2020-03-24T14:07:24Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- test.WorkerTest -->
+      <class name="test.WorkPositionTest">
+        <test-method is-config="true" signature="setupSession()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:24Z" name="setupSession" finished-at="2020-03-24T14:07:25Z" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSession -->
+        <test-method is-config="true" signature="setDAO()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="setDAO" finished-at="2020-03-24T14:07:25Z" depends-on-methods="test.GenericTest.setupSession" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDAO -->
+        <test-method signature="getWorkPosition()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="getWorkPosition" finished-at="2020-03-24T14:07:25Z" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWorkPosition -->
+        <test-method signature="addWorkPosition()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="addWorkPosition" finished-at="2020-03-24T14:07:25Z" depends-on-methods="test.WorkPositionTest.getWorkPosition" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addWorkPosition -->
+        <test-method signature="updateWorkPosition()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="updateWorkPosition" finished-at="2020-03-24T14:07:25Z" depends-on-methods="test.WorkPositionTest.addWorkPosition" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateWorkPosition -->
+        <test-method signature="deleteWorkPosition()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="deleteWorkPosition" finished-at="2020-03-24T14:07:25Z" depends-on-methods="test.WorkPositionTest.updateWorkPosition" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteWorkPosition -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:test.WorkPositionTest@7ce6a65d]" started-at="2020-03-24T14:07:25Z" name="closeSession" finished-at="2020-03-24T14:07:25Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- test.WorkPositionTest -->
+      <class name="test.DepartmentTest">
+        <test-method is-config="true" signature="setupSession()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="setupSession" finished-at="2020-03-24T14:07:24Z" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSession -->
+        <test-method is-config="true" signature="setDAO()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="setDAO" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.GenericTest.setupSession" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDAO -->
+        <test-method signature="getDepartment()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="getDepartment" finished-at="2020-03-24T14:07:24Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDepartment -->
+        <test-method signature="addDepartment()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="addDepartment" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.DepartmentTest.getDepartment" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDepartment -->
+        <test-method signature="updateDepartment()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="updateDepartment" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.DepartmentTest.addDepartment" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDepartment -->
+        <test-method signature="deleteDepartment()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="deleteDepartment" finished-at="2020-03-24T14:07:24Z" depends-on-methods="test.DepartmentTest.updateDepartment" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDepartment -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:test.DepartmentTest@4abdb505]" started-at="2020-03-24T14:07:24Z" name="closeSession" finished-at="2020-03-24T14:07:24Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- test.DepartmentTest -->
+    </test> <!-- PersonnelTest -->
+  </suite> <!-- PersonnelSuite -->
+</testng-results>
