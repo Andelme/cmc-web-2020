@@ -12,12 +12,8 @@ abstract public class GenericTest {
 
     @BeforeClass
     protected void setupSession() {
-        try {
-            testSessionFactory = new Configuration().configure().buildSessionFactory();
-            testSession = testSessionFactory.openSession();
-        } catch (Throwable ex) {
-            throw new ExceptionInInitializerError();
-        }
+        testSessionFactory = new Configuration().configure().buildSessionFactory();
+        testSession = testSessionFactory.openSession();
     }
     @AfterClass
     protected void closeSession() {

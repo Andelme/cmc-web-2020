@@ -44,7 +44,7 @@ public class Worker {
     @Enumerated(EnumType.STRING)
     @Type(type = "pgsql_enum")
     @Column(name = "education_degree", nullable = false,
-            columnDefinition = "enum('without_degree', 'bachelor', 'master', 'doctor');")
+            columnDefinition = "enum('without_degree', 'bachelor', 'master', 'doctor')")
     private DegreeType education_degree;
 
     public Worker() {}

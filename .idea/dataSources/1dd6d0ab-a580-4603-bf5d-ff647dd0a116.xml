@@ -14,10 +14,10 @@
       <Owner>user</Owner>
       <IntrospectionStateNumber>2159</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|31793|31795|1
-sequence|table|31759|31761|1
+      <Relations>sequence|table|31759|31761|1
 sequence|table|31767|31769|1
 sequence|table|31778|31780|1
+sequence|table|31793|31795|1
 </Relations>
     </database>
     <database id="4" parent="1" name="postgres">

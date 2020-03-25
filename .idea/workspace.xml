@@ -4,6 +4,8 @@
     <list default="true" id="b1eeb922-9775-4408-839b-7c7262730cdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GenericTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,6 +275,8 @@
       <workItem from="1584835498873" duration="4134000" />
       <workItem from="1584839949670" duration="39065000" />
       <workItem from="1585059438722" duration="48000" />
+      <workItem from="1585060355651" duration="189000" />
+      <workItem from="1585135571818" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity and DAO classes">
       <created>1584825549497</created>
