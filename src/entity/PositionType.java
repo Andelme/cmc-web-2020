@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "position_type", schema = "public", catalog = "personnel")
@@ -55,5 +56,21 @@ public class PositionType {
     }
     public Integer getSalary() {
         return salary;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        PositionType other = (PositionType) obj;
+        return Objects.equals(postype_id, other.postype_id) &&
+                Objects.equals(postype_name, other.postype_name) &&
+                Objects.equals(responsibilities, other.responsibilities) &&
+                Objects.equals(salary, other.salary);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(postype_id, postype_name, responsibilities, salary);
     }
 }

@@ -17,10 +17,12 @@ public class PositionTypeTest extends GenericTest {
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
         positionTypeDAO = new PositionTypeDAO();
-        positionTypeDAO.setSession(testSession);
+        positionTypeDAO.setSessionFactory(testSessionFactory);
     }
     @Test
     public void getPositionType() {
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
+
         PositionType positionType = positionTypeDAO.getByID((long) 1);
         Assert.assertNotNull(positionType);
         Assert.assertEquals((long) positionType.getPostype_id(), 1);
@@ -53,10 +55,12 @@ public class PositionTypeTest extends GenericTest {
         for (PositionType e : posTypes) {
             Assert.assertTrue(testPosTypes.contains(e));
         }
+
+        transaction.commit();
     }
     @Test(dependsOnMethods = "getPositionType")
     public void addPositionType() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         PositionType positionType = new PositionType();
         positionType.setPostype_name("Test Name");
@@ -67,11 +71,13 @@ public class PositionTypeTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertEquals(positionTypeDAO.getByID(test_postype_id), positionType);
+        transaction.commit();
     }
     @Test(dependsOnMethods = "addPositionType")
     public void updatePositionType() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         PositionType positionType = positionTypeDAO.getByID(test_postype_id);
         Assert.assertNotNull(positionType);
@@ -80,7 +86,9 @@ public class PositionTypeTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         positionType = positionTypeDAO.getByID(test_postype_id);
+        transaction.commit();
         Assert.assertNotNull(positionType);
         Assert.assertEquals((long) positionType.getPostype_id(), test_postype_id);
         Assert.assertEquals(positionType.getPostype_name(), "Updated Test Name");
@@ -89,7 +97,7 @@ public class PositionTypeTest extends GenericTest {
     }
     @Test(dependsOnMethods = "updatePositionType")
     public void deletePositionType() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         PositionType positionType = positionTypeDAO.getByID(test_postype_id);
         Assert.assertNotNull(positionType);
@@ -97,6 +105,8 @@ public class PositionTypeTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertNull(positionTypeDAO.getByID(test_postype_id));
+        transaction.commit();
     }
 }

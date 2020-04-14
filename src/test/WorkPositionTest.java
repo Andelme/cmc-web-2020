@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,13 +28,15 @@ public class WorkPositionTest extends GenericTest {
         workerDAO = new WorkerDAO();
         positionTypeDAO = new PositionTypeDAO();
         departmentDAO = new DepartmentDAO();
-        workPositionDAO.setSession(testSession);
-        workerDAO.setSession(testSession);
-        positionTypeDAO.setSession(testSession);
-        departmentDAO.setSession(testSession);
+        workPositionDAO.setSessionFactory(testSessionFactory);
+        workerDAO.setSessionFactory(testSessionFactory);
+        positionTypeDAO.setSessionFactory(testSessionFactory);
+        departmentDAO.setSessionFactory(testSessionFactory);
     }
     @Test
     public void getWorkPosition() {
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
+
         WorkPosition workPosition = workPositionDAO.getByID((long) 1);
         Assert.assertNotNull(workPosition);
         Assert.assertEquals((long) workPosition.getPosition_id(), 1);
@@ -95,14 +97,16 @@ public class WorkPositionTest extends GenericTest {
         for (WorkPosition e : workPositions) {
             Assert.assertTrue(testWorkPositions.contains(e));
         }
+
+        transaction.commit();
     }
     @Test(dependsOnMethods = "getWorkPosition")
     public void addWorkPosition() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
         WorkPosition workPosition = new WorkPosition();
         workPosition.setWorker_id(workerDAO.getByID((long) 1));
         workPosition.setPostype_id(positionTypeDAO.getByID((long) 1));
-        workPosition.setAppointment_date(Date.valueOf("2020-01-01"));
+        workPosition.setAppointment_date(Timestamp.valueOf("2020-01-01 00:00:00.0"));
         workPosition.setWork_rate(1.0);
         workPosition.setDepartment_id(departmentDAO.getByID((long) 1));
         workPositionDAO.save(workPosition);
@@ -110,31 +114,35 @@ public class WorkPositionTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertEquals(workPositionDAO.getByID(test_position_id), workPosition);
+        transaction.commit();
     }
     @Test(dependsOnMethods = "addWorkPosition")
     public void updateWorkPosition() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         WorkPosition workPosition = workPositionDAO.getByID(test_position_id);
         Assert.assertNotNull(workPosition);
-        workPosition.setRetire_date(Date.valueOf("2030-01-01"));
+        workPosition.setRetire_date(Timestamp.valueOf("2030-01-01 00:00:00.0"));
         workPositionDAO.update(workPosition);
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         workPosition = workPositionDAO.getByID(test_position_id);
+        transaction.commit();
         Assert.assertNotNull(workPosition);
         Assert.assertEquals(workPosition.getPosition_id(), test_position_id);
         Assert.assertEquals((long) workPosition.getWorker_id().getWorker_id(), 1);
         Assert.assertEquals((long) workPosition.getPostype_id().getPostype_id(), 1);
-        Assert.assertEquals(workPosition.getAppointment_date().toString(), "2020-01-01");
-        Assert.assertEquals(workPosition.getRetire_date().toString(), "2030-01-01");
+        Assert.assertEquals(workPosition.getAppointment_date().toString(), "2020-01-01 00:00:00.0");
+        Assert.assertEquals(workPosition.getRetire_date().toString(), "2030-01-01 00:00:00.0");
         Assert.assertEquals((long) workPosition.getDepartment_id().getDepartment_id(), 1);
     }
     @Test(dependsOnMethods = "updateWorkPosition")
     public void deleteWorkPosition() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         WorkPosition workPosition = workPositionDAO.getByID(test_position_id);
         Assert.assertNotNull(workPosition);
@@ -142,6 +150,8 @@ public class WorkPositionTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertNull(workPositionDAO.getByID(test_position_id));
+        transaction.commit();
     }
 }

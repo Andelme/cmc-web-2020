@@ -7,17 +7,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 abstract public class GenericTest {
-    private SessionFactory testSessionFactory;
-    protected Session testSession;
+    protected SessionFactory testSessionFactory;
 
     @BeforeClass
     protected void setupSession() {
         testSessionFactory = new Configuration().configure().buildSessionFactory();
-        testSession = testSessionFactory.openSession();
     }
     @AfterClass
     protected void closeSession() {
-        testSession.close();
         testSessionFactory.close();
     }
 

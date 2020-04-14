@@ -1,89 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="web-prac:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b1eeb922-9775-4408-839b-7c7262730cdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_prac_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_Data_JPA_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/querydsl_core_4_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/config/HibernateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/controller/PersonnelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/glassfish-web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-prac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-prac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DepartmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DepartmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/GenericDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PositionTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PositionTypeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/WorkPositionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/WorkPositionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/WorkerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/WorkerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/PositionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/WorkPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/WorkPosition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/DepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DepartmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/GenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/PositionTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PositionTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/WorkPositionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/WorkPositionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/WorkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/WorkerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnel: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnel: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnel: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnel: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="personnel@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnel: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="work_position: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="web-prac" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -101,13 +70,19 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1Y1R4uXVrNLE243rdSvwxChRCnd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -121,27 +96,102 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/web-prac" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.webservices" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/res" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/out/production/web-prac" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/resources" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/res" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.WorkPositionTest">
+  <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.1">
+    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/personnel" />
+      <option name="BROWSER_ID" value="e5120d43-2c3f-47ef-9f26-65e539e05186" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="web-prac:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="web-prac:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <configuration name="DepartmentTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-prac" />
       <extension name="coverage">
@@ -211,6 +261,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
       <item itemvalue="TestNG.DepartmentTest" />
       <item itemvalue="TestNG.PositionTypeTest" />
       <item itemvalue="TestNG.WorkerTest" />
@@ -218,38 +269,12 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WorkPositionTest" />
+        <item itemvalue="TestNG.DepartmentTest" />
         <item itemvalue="TestNG.PositionTypeTest" />
         <item itemvalue="TestNG.WorkerTest" />
-        <item itemvalue="TestNG.DepartmentTest" />
+        <item itemvalue="TestNG.WorkPositionTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="personnel@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -276,7 +301,12 @@
       <workItem from="1584839949670" duration="39065000" />
       <workItem from="1585059438722" duration="48000" />
       <workItem from="1585060355651" duration="189000" />
-      <workItem from="1585135571818" duration="113000" />
+      <workItem from="1585135571818" duration="310000" />
+      <workItem from="1586610948081" duration="2294000" />
+      <workItem from="1586614226769" duration="1227000" />
+      <workItem from="1586615666422" duration="294000" />
+      <workItem from="1586617883812" duration="326000" />
+      <workItem from="1586723543277" duration="26912000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity and DAO classes">
       <created>1584825549497</created>
@@ -310,7 +340,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -325,23 +355,39 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Assign_Data_Sources/0.0.1440.900@0.0.1440.900" timestamp="1584975276092" />
-    <state x="320" y="115" key="#Inspections" timestamp="1584833306988">
+    <state x="486" y="251" key="#BuildArtifactsBeforeRunChooser" timestamp="1586763044699">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1584833306988" />
-    <state x="320" y="114" key="#Project_Structure" timestamp="1584834501000">
+    <state x="486" y="251" key="#BuildArtifactsBeforeRunChooser/0.0.1440.900@0.0.1440.900" timestamp="1586763044699" />
+    <state x="431" y="71" key="#GlassFish_5.0.0" timestamp="1586611418589">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="114" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1584834501000" />
-    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585059480735">
+    <state x="431" y="71" key="#GlassFish_5.0.0/0.0.1440.900@0.0.1440.900" timestamp="1586611418589" />
+    <state x="320" y="115" key="#Inspections" timestamp="1586790341503">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585059480735" />
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585056138995">
+    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1586790341503" />
+    <state x="320" y="114" key="#Project_Structure" timestamp="1586611711324">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1585056138995" />
+    <state x="320" y="114" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1586611711324" />
+    <state x="298" y="104" key="#Web_Browsers" timestamp="1586611588827">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="298" y="104" key="#Web_Browsers/0.0.1440.900@0.0.1440.900" timestamp="1586611588827" />
+    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586767913495">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1586767913495" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586850936586">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1586850936586" />
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1585027398416" />
+    <state x="525" y="404" width="512" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1586855767953">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="525" y="404" width="512" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1440.900@0.0.1440.900" timestamp="1586855767953" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1584832946679">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -354,10 +400,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="642" y="218" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584972302586" />
-    <state x="530" y="413" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1584841898103">
+    <state x="298" y="104" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1586618133019">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="530" y="413" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.900@0.0.1440.900" timestamp="1584841898103" />
+    <state x="298" y="104" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1440.900@0.0.1440.900" timestamp="1586618133019" />
+    <state x="530" y="413" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1586759663160">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="530" y="413" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1440.900@0.0.1440.900" timestamp="1586759663160" />
+    <state x="520" y="395" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1586724164775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="520" y="395" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1440.900@0.0.1440.900" timestamp="1586724164775" />
     <state x="526" y="182" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1584840337569">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -374,62 +428,70 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585046119383" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1585058856546">
+    <state width="958" height="252" key="GridCell.Tab.0.bottom" timestamp="1586857995642">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585058856546" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584978165681" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1585058856543">
+    <state width="958" height="252" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586857995642" />
+    <state width="958" height="252" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586767604079" />
+    <state width="958" height="252" key="GridCell.Tab.0.center" timestamp="1586857995641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585058856543" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584978165679" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1585058856541">
+    <state width="958" height="252" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586857995641" />
+    <state width="958" height="252" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1586767604078" />
+    <state width="958" height="252" key="GridCell.Tab.0.left" timestamp="1586857995641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585058856541" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584978165678" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1585058856544">
+    <state width="958" height="252" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586857995641" />
+    <state width="958" height="252" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1586767604076" />
+    <state width="958" height="252" key="GridCell.Tab.0.right" timestamp="1586857995642">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585058856544" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584978165680" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1585027505849">
+    <state width="958" height="252" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586857995642" />
+    <state width="958" height="252" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1586767604079" />
+    <state width="958" height="252" key="GridCell.Tab.1.bottom" timestamp="1586857995182">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585027505849" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1585027505848">
+    <state width="958" height="252" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586857995182" />
+    <state width="958" height="252" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1586767603688" />
+    <state width="958" height="252" key="GridCell.Tab.1.center" timestamp="1586857995180">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1585027505848" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1585027505846">
+    <state width="958" height="252" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1586857995180" />
+    <state width="958" height="252" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1586767603684" />
+    <state width="958" height="252" key="GridCell.Tab.1.left" timestamp="1586857995179">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1585027505846" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1585027505848">
+    <state width="958" height="252" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1586857995179" />
+    <state width="958" height="252" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1586767603684" />
+    <state width="958" height="252" key="GridCell.Tab.1.right" timestamp="1586857995181">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1585027505848" />
-    <state x="221" y="63" key="SettingsEditor" timestamp="1584921552291">
+    <state width="958" height="252" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1586857995181" />
+    <state width="958" height="252" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1586767603686" />
+    <state x="121" y="63" key="SettingsEditor" timestamp="1586857149582">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584921552291" />
+    <state x="121" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586857149582" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585046135795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1585046135795" />
-    <state x="437" y="382" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584836390876">
+    <state x="437" y="382" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586852946577">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="437" y="382" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1584836390876" />
+    <state x="437" y="382" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1586852946577" />
+    <state x="298" y="113" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1586612043828">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="298" y="113" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1440.900@0.0.1440.900" timestamp="1586612043828" />
     <state x="301" y="37" width="837" height="825" key="find.popup" timestamp="1584833212735">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="301" y="37" width="837" height="825" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1584833212735" />
-    <state x="110" y="66" key="new project wizard" timestamp="1584839838208">
+    <state x="110" y="66" key="new project wizard" timestamp="1586618207825">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="110" y="66" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1584839838208" />
+    <state x="110" y="66" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1586618207825" />
     <state x="716" y="210" key="run.anything.popup" timestamp="1585052378583">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -438,5 +500,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1584981758975" />
+    <state x="421" y="172" key="spring file set editor" timestamp="1586856852763">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="172" key="spring file set editor/0.0.1440.900@0.0.1440.900" timestamp="1586856852763" />
   </component>
 </project>

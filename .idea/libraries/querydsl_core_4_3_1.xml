@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="querydsl-core-4.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/querydsl-core-4.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/querydsl-jpa-4.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

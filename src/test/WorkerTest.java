@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,10 +18,12 @@ public class WorkerTest extends GenericTest {
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
         workerDAO = new WorkerDAO();
-        workerDAO.setSession(testSession);
+        workerDAO.setSessionFactory(testSessionFactory);
     }
     @Test
     public void getWorker() {
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
+
         Worker worker = workerDAO.getByID((long) 1);
         Assert.assertNotNull(worker);
         Assert.assertEquals((long) worker.getWorker_id(), 1);
@@ -57,7 +59,7 @@ public class WorkerTest extends GenericTest {
 
         Assert.assertEquals(workerDAO.getByPostypeName("Name").size(), 0);
 
-        workers = workerDAO.getByHireDate(Date.valueOf("2000-01-01"), Date.valueOf("2010-01-01"));
+        workers = workerDAO.getByHireDate(Timestamp.valueOf("2000-01-01 00:00:00.0"), Timestamp.valueOf("2010-01-01 00:00:00.0"));
         testWorkers = Arrays.asList(
                 workerDAO.getByID((long) 1),
                 workerDAO.getByID((long) 2),
@@ -70,7 +72,7 @@ public class WorkerTest extends GenericTest {
             Assert.assertTrue(testWorkers.contains(e));
         }
 
-        Assert.assertEquals(workerDAO.getByHireDate(Date.valueOf("2040-01-01"), Date.valueOf("2050-01-01")).size(), 0);
+        Assert.assertEquals(workerDAO.getByHireDate(Timestamp.valueOf("2040-01-01 00:00:00.0"), Timestamp.valueOf("2050-01-01 00:00:00.0")).size(), 0);
 
         workers = workerDAO.getAll();
         testWorkers = Arrays.asList(
@@ -89,28 +91,32 @@ public class WorkerTest extends GenericTest {
         for (Worker e : workers) {
             Assert.assertTrue(testWorkers.contains(e));
         }
+
+        transaction.commit();
     }
     @Test(dependsOnMethods = "getWorker")
     public void addWorker() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         Worker worker = new Worker();
         worker.setName("Test Name");
-        worker.setBirth_date(Date.valueOf("1990-01-01"));
+        worker.setBirth_date(Timestamp.valueOf("1990-01-01 00:00:00.0"));
         worker.setAddress("Test");
         worker.setPhone_number("Test phone");
-        worker.setHire_date(Date.valueOf("2020-01-01"));
+        worker.setHire_date(Timestamp.valueOf("2020-01-01 00:00:00.0"));
         worker.setEducation_degree(Worker.DegreeType.bachelor);
         workerDAO.save(worker);
         test_worker_id = worker.getWorker_id();
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertEquals(workerDAO.getByID(test_worker_id), worker);
+        transaction.commit();
     }
     @Test(dependsOnMethods = "addWorker")
     public void updateWorker() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         Worker worker = workerDAO.getByID(test_worker_id);
         Assert.assertNotNull(worker);
@@ -119,19 +125,21 @@ public class WorkerTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         worker = workerDAO.getByID(test_worker_id);
+        transaction.commit();
         Assert.assertNotNull(worker);
         Assert.assertEquals(worker.getWorker_id(), test_worker_id);
         Assert.assertEquals(worker.getName(), "Test Name");
-        Assert.assertEquals(worker.getBirth_date().toString(), "1990-01-01");
+        Assert.assertEquals(worker.getBirth_date().toString(), "1990-01-01 00:00:00.0");
         Assert.assertEquals(worker.getAddress(), "Updated test");
         Assert.assertEquals(worker.getPhone_number(), "Test phone");
-        Assert.assertEquals(worker.getHire_date().toString(), "2020-01-01");
+        Assert.assertEquals(worker.getHire_date().toString(), "2020-01-01 00:00:00.0");
         Assert.assertEquals(worker.getEducation_degree(), Worker.DegreeType.bachelor);
     }
     @Test(dependsOnMethods = "updateWorker")
     public void deleteWorker() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         Worker worker = workerDAO.getByID(test_worker_id);
         Assert.assertNotNull(worker);
@@ -139,6 +147,8 @@ public class WorkerTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertNull(workerDAO.getByID(test_worker_id));
+        transaction.commit();
     }
 }

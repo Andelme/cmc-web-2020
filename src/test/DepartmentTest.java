@@ -17,10 +17,11 @@ public class DepartmentTest extends GenericTest {
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
         departmentDAO = new DepartmentDAO();
-        departmentDAO.setSession(testSession);
+        departmentDAO.setSessionFactory(testSessionFactory);
     }
     @Test
     public void getDepartment() {
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Department department = departmentDAO.getByID((long) 1);
         Assert.assertNotNull(department);
         Assert.assertEquals((long) department.getDepartment_id(), 1);
@@ -63,10 +64,11 @@ public class DepartmentTest extends GenericTest {
         for (Department e : departments) {
             Assert.assertTrue(testDepartments.contains(e));
         }
+        transaction.commit();
     }
     @Test(dependsOnMethods = "getDepartment")
     public void addDepartment() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertNull(departmentDAO.getByDepartmentName("Test"));
 
         Department department = new Department();
@@ -77,11 +79,13 @@ public class DepartmentTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertEquals(departmentDAO.getByID(test_department_id), department);
+        transaction.commit();
     }
     @Test(dependsOnMethods = "addDepartment")
     public void updateDepartment() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         Department department = departmentDAO.getByID(test_department_id);
         Assert.assertNotNull(department);
@@ -90,15 +94,17 @@ public class DepartmentTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         department = departmentDAO.getByID(test_department_id);
         Assert.assertNotNull(department);
         Assert.assertEquals(department.getDepartment_id(), test_department_id);
         Assert.assertEquals(department.getDepartment_name(), "Updated test");
         Assert.assertEquals(department.getHead_department(), departmentDAO.getByID((long) 1));
+        transaction.commit();
     }
     @Test(dependsOnMethods = "updateDepartment")
     public void deleteDepartment() {
-        Transaction transaction = testSession.beginTransaction();
+        Transaction transaction = testSessionFactory.getCurrentSession().beginTransaction();
 
         Department department = departmentDAO.getByID(test_department_id);
         Assert.assertNotNull(department);
@@ -106,6 +112,8 @@ public class DepartmentTest extends GenericTest {
 
         transaction.commit();
 
+        transaction = testSessionFactory.getCurrentSession().beginTransaction();
         Assert.assertNull(departmentDAO.getByID(test_department_id));
+        transaction.commit();
     }
 }

@@ -1,6 +1,7 @@
 package entity;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "department", schema = "public", catalog = "personnel")
@@ -43,5 +44,20 @@ public class Department {
     }
     public Department getHead_department() {
         return head_department;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Department other = (Department) obj;
+        return Objects.equals(department_id, other.department_id) &&
+                Objects.equals(department_name, other.department_name) &&
+                Objects.equals(head_department, other.head_department);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(department_id, department_name, head_department);
     }
 }
