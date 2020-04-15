@@ -33,9 +33,9 @@
             org.hibernate.context.internal.ThreadLocalSessionContext
         </property>
 
-        <mapping class = "entity.Department"/>
-        <mapping class = "entity.PositionType"/>
-        <mapping class = "entity.WorkPosition"/>
-        <mapping class = "entity.Worker"/>
+        <mapping class = "spring.entity.Department"/>
+        <mapping class = "spring.entity.PositionType"/>
+        <mapping class = "spring.entity.WorkPosition"/>
+        <mapping class = "spring.entity.Worker"/>
     </session-factory>
 </hibernate-configuration>

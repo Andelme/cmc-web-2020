@@ -1,7 +1,7 @@
 package test;
 
-import dao.DepartmentDAO;
-import entity.Department;
+import spring.dao.impl.DepartmentDAOImpl;
+import spring.entity.Department;
 import org.hibernate.Transaction;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -11,12 +11,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class DepartmentTest extends GenericTest {
-    private DepartmentDAO departmentDAO;
+    private DepartmentDAOImpl departmentDAO;
     private Long test_department_id;
 
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
-        departmentDAO = new DepartmentDAO();
+        departmentDAO = new DepartmentDAOImpl();
         departmentDAO.setSessionFactory(testSessionFactory);
     }
     @Test

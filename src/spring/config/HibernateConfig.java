@@ -1,6 +1,5 @@
 package spring.config;
 
-import dao.*;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -22,8 +21,13 @@ import java.util.Properties;
 @EnableTransactionManagement
 @PropertySource("classpath:database.properties")
 public class HibernateConfig {
-    @Autowired
+
     private Environment env;
+
+    @Autowired
+    public void setEnv(Environment env) {
+        this.env = env;
+    }
 
     private Properties hibernateProperties() {
         final Properties hibernateProperties = new Properties();
@@ -31,7 +35,6 @@ public class HibernateConfig {
         hibernateProperties.setProperty("hibernate.dialect", env.getRequiredProperty("hibernate.dialect"));
         hibernateProperties.setProperty("hibernate.show_sql", env.getRequiredProperty("hibernate.show_sql"));
         hibernateProperties.setProperty("current_session_context_class", env.getRequiredProperty("current_session_context_class"));
-
         return hibernateProperties;
     }
 
@@ -39,7 +42,6 @@ public class HibernateConfig {
     public LocaleResolver localeResolver() {
         SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
         sessionLocaleResolver.setDefaultLocale(new Locale("ru_RU"));
-
         return sessionLocaleResolver;
     }
 
@@ -47,47 +49,23 @@ public class HibernateConfig {
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName(env.getRequiredProperty("postgresql.driver"));
-        dataSource.setUrl(env.getRequiredProperty("postgresql.localhost") +
-                          env.getRequiredProperty("postgresql.database"));
+        dataSource.setUrl(env.getRequiredProperty("postgresql.localhost") + env.getRequiredProperty("postgresql.database"));
         dataSource.setUsername(env.getRequiredProperty("postgresql.user"));
         dataSource.setPassword(env.getRequiredProperty("postgresql.password"));
-
         return dataSource;
     }
 
     @Bean(name = "sessionFactory")
     public LocalSessionFactoryBean getSessionFactory(DataSource dataSource) {
         LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
-
-        factoryBean.setPackagesToScan("entity");
+        factoryBean.setPackagesToScan("spring/entity");
         factoryBean.setDataSource(dataSource);
         factoryBean.setHibernateProperties(hibernateProperties());
-
         return factoryBean;
     }
 
     @Bean(name = "transactionManager")
     public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
         return new HibernateTransactionManager(sessionFactory);
-    }
-
-    @Bean(name = "DepartmentDAO")
-    public DepartmentDAO DepartmentDAO() {
-        return new DepartmentDAO();
-    }
-
-    @Bean(name = "PositionTypeDAO")
-    public PositionTypeDAO PositionTypeDAO() {
-        return new PositionTypeDAO();
-    }
-
-    @Bean(name = "WorkerDAO")
-    public WorkerDAO WorkerDAO() {
-        return new WorkerDAO();
-    }
-
-    @Bean(name = "WorkPositionDAO")
-    public WorkPositionDAO WorkPositionDAO() {
-        return new WorkPositionDAO();
     }
 }

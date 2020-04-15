@@ -1,15 +1,14 @@
-package entity;
+package spring.entity;
 
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
-import org.omg.CORBA.TIMEOUT;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@TypeDef(name = "pgsql_enum", typeClass = entity.PostgreSQLType.class)
+@TypeDef(name = "pgsql_enum", typeClass = spring.entity.PostgreSQLType.class)
 @Table(name = "worker", schema = "public", catalog = "personnel")
 public class Worker {
     public enum DegreeType {

@@ -1,4 +1,4 @@
-package entity;
+package spring.entity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;

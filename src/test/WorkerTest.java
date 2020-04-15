@@ -1,7 +1,7 @@
 package test;
 
-import dao.WorkerDAO;
-import entity.Worker;
+import spring.dao.impl.WorkerDAOImpl;
+import spring.entity.Worker;
 import org.hibernate.Transaction;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -12,12 +12,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class WorkerTest extends GenericTest {
-    private WorkerDAO workerDAO;
+    private WorkerDAOImpl workerDAO;
     private Long test_worker_id;
 
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
-        workerDAO = new WorkerDAO();
+        workerDAO = new WorkerDAOImpl();
         workerDAO.setSessionFactory(testSessionFactory);
     }
     @Test

@@ -1,11 +1,10 @@
 package test;
 
-import dao.DepartmentDAO;
-import dao.PositionTypeDAO;
-import dao.WorkPositionDAO;
-import dao.WorkerDAO;
-import entity.WorkPosition;
-import entity.Worker;
+import spring.dao.impl.DepartmentDAOImpl;
+import spring.dao.impl.PositionTypeDAOImpl;
+import spring.dao.impl.WorkPositionDAOImpl;
+import spring.dao.impl.WorkerDAOImpl;
+import spring.entity.WorkPosition;
 import org.hibernate.Transaction;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -16,18 +15,18 @@ import java.util.Arrays;
 import java.util.List;
 
 public class WorkPositionTest extends GenericTest {
-    private WorkPositionDAO workPositionDAO;
-    private WorkerDAO workerDAO;
-    private PositionTypeDAO positionTypeDAO;
-    private DepartmentDAO departmentDAO;
+    private WorkPositionDAOImpl workPositionDAO;
+    private WorkerDAOImpl workerDAO;
+    private PositionTypeDAOImpl positionTypeDAO;
+    private DepartmentDAOImpl departmentDAO;
     private Long test_position_id;
 
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
-        workPositionDAO = new WorkPositionDAO();
-        workerDAO = new WorkerDAO();
-        positionTypeDAO = new PositionTypeDAO();
-        departmentDAO = new DepartmentDAO();
+        workPositionDAO = new WorkPositionDAOImpl();
+        workerDAO = new WorkerDAOImpl();
+        positionTypeDAO = new PositionTypeDAOImpl();
+        departmentDAO = new DepartmentDAOImpl();
         workPositionDAO.setSessionFactory(testSessionFactory);
         workerDAO.setSessionFactory(testSessionFactory);
         positionTypeDAO.setSessionFactory(testSessionFactory);

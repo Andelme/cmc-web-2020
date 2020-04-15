@@ -6,7 +6,7 @@
 </head>
 <body>
 <c:forEach items="${workerList}" var="worker">
-    <td>${worker.name}</td>
+    <br>${worker.name}
 </c:forEach>
 </body>
 </html>

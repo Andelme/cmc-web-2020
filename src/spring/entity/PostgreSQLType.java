@@ -1,4 +1,4 @@
-package entity;
+package spring.entity;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;

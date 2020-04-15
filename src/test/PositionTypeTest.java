@@ -1,7 +1,7 @@
 package test;
 
-import dao.PositionTypeDAO;
-import entity.PositionType;
+import spring.dao.impl.PositionTypeDAOImpl;
+import spring.entity.PositionType;
 import org.hibernate.Transaction;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -11,12 +11,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class PositionTypeTest extends GenericTest {
-    private PositionTypeDAO positionTypeDAO;
+    private PositionTypeDAOImpl positionTypeDAO;
     private long test_postype_id;
 
     @BeforeClass(dependsOnMethods = "setupSession")
     protected void setDAO() {
-        positionTypeDAO = new PositionTypeDAO();
+        positionTypeDAO = new PositionTypeDAOImpl();
         positionTypeDAO.setSessionFactory(testSessionFactory);
     }
     @Test

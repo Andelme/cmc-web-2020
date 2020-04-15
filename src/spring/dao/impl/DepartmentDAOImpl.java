@@ -1,6 +1,8 @@
-package dao;
+package spring.dao.impl;
 
-import entity.Department;
+import spring.dao.DepartmentDAO;
+import spring.dao.common.GenericDAOImpl;
+import spring.entity.Department;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.NoResultException;
@@ -9,13 +11,17 @@ import java.util.List;
 
 @Repository
 @SuppressWarnings("unchecked")
-public class DepartmentDAO extends GenericDAO<Department, Long> {
+public class DepartmentDAOImpl extends GenericDAOImpl<Department, Long> implements DepartmentDAO {
+
+    @Override
     public List<Department> getByHeadDepartment(Long head_department) {
         TypedQuery<Department> query = getCurrentSession().createQuery(
                 "SELECT e FROM Department e WHERE e.head_department.department_id = :head_department"
         ).setParameter("head_department", head_department);
         return query.getResultList();
     }
+
+    @Override
     public Department getByDepartmentName(String department_name) {
         try {
             TypedQuery<Department> query = getCurrentSession().createQuery(
