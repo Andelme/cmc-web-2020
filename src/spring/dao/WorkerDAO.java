@@ -8,9 +8,5 @@ import java.util.List;
 
 public interface WorkerDAO extends GenericDAO<Worker, Long> {
 
-    List<Worker> getByDepartmentName(String department_name);
-
-    List<Worker> getByPostypeName(String postype_name);
-
-    List<Worker> getByHireDate(Timestamp startDate, Timestamp endDate);
+    List<Worker> getSpareWorkers();
 }

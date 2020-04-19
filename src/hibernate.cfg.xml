@@ -2,7 +2,6 @@
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-
 <hibernate-configuration>
     <session-factory>
         <property name = "dialect">
@@ -10,7 +9,7 @@
         </property>
 
         <property name = "connection.url">
-            jdbc:postgresql://localhost/personnel
+            jdbc:postgresql://localhost/bookstore
         </property>
 
         <property name = "connection.driver_class">
@@ -29,13 +28,10 @@
             1
         </property>
 
-        <property name="hibernate.current_session_context_class">
-            org.hibernate.context.internal.ThreadLocalSessionContext
-        </property>
-
-        <mapping class = "spring.entity.Department"/>
-        <mapping class = "spring.entity.PositionType"/>
-        <mapping class = "spring.entity.WorkPosition"/>
         <mapping class = "spring.entity.Worker"/>
+        <mapping class = "spring.entity.PositionType"/>
+        <mapping class = "spring.entity.Department"/>
+        <mapping class = "spring.entity.WorkPosition"/>
+
     </session-factory>
 </hibernate-configuration>

@@ -4,7 +4,7 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.sql.Date;
 import java.util.Objects;
 
 @Entity
@@ -28,7 +28,7 @@ public class Worker {
 
     @Basic
     @Column(name = "birth_date", nullable = false)
-    private Timestamp birth_date;
+    private Date birth_date;
 
     @Basic
     @Column(name = "address", nullable = false, length = 200)
@@ -40,7 +40,7 @@ public class Worker {
 
     @Basic
     @Column(name = "hire_date", nullable = false)
-    private Timestamp hire_date;
+    private Date hire_date;
 
     @Enumerated(EnumType.STRING)
     @Type(type = "pgsql_enum")
@@ -49,8 +49,8 @@ public class Worker {
     private DegreeType education_degree;
 
     public Worker() {}
-    public Worker(String name, Timestamp birth_date, String address,
-                  String phone_number, Timestamp hire_date, DegreeType education_degree) {
+    public Worker(String name, Date birth_date, String address,
+                  String phone_number, Date hire_date, DegreeType education_degree) {
         this.name = name;
         this.birth_date = birth_date;
         this.address = address;
@@ -73,10 +73,10 @@ public class Worker {
         return name;
     }
 
-    public void setBirth_date(Timestamp birth_date) {
+    public void setBirth_date(Date birth_date) {
         this.birth_date = birth_date;
     }
-    public Timestamp getBirth_date() {
+    public Date getBirth_date() {
         return birth_date;
     }
 
@@ -94,10 +94,10 @@ public class Worker {
         return phone_number;
     }
 
-    public void setHire_date(Timestamp hire_date) {
+    public void setHire_date(Date hire_date) {
         this.hire_date = hire_date;
     }
-    public Timestamp getHire_date() {
+    public Date getHire_date() {
         return hire_date;
     }
 

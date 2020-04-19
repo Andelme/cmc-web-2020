@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="personnel@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.17">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.18">
     <root id="1">
       <ServerVersion>12.2</ServerVersion>
-      <StartupTime>1584357792</StartupTime>
+      <StartupTime>1586966740</StartupTime>
     </root>
     <database id="2" parent="1" name="Anselm">
       <ObjectId>16652</ObjectId>
       <Owner>Anselm</Owner>
     </database>
     <database id="3" parent="1" name="personnel">
-      <ObjectId>31748</ObjectId>
+      <ObjectId>42974</ObjectId>
       <Owner>user</Owner>
-      <IntrospectionStateNumber>2159</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2938</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|31793|31795|1
-sequence|table|31778|31780|1
-sequence|table|31767|31769|1
-sequence|table|31759|31761|1
+      <Relations>sequence|table|42985|42987|1
+sequence|table|42993|42995|1
+sequence|table|43004|43006|1
+sequence|table|43019|43021|1
 </Relations>
     </database>
     <database id="4" parent="1" name="postgres">
@@ -32,8 +32,8 @@ sequence|table|31759|31761|1
     <role id="6" parent="1" name="Anselm">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
-      <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
@@ -65,8 +65,8 @@ sequence|table|31759|31761|1
     <role id="15" parent="1" name="user">
       <ObjectId>16388</ObjectId>
       <SuperRole>1</SuperRole>
-      <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
       <CanLogin>1</CanLogin>
     </role>
     <schema id="16" parent="3" name="information_schema">
@@ -85,7 +85,7 @@ sequence|table|31759|31761|1
       <Comment>standard public schema</Comment>
       <StateNumber>275</StateNumber>
       <Owner>Anselm</Owner>
-      <IntrospectionStateNumber>2160</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2939</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="19" parent="3" name="heap">
@@ -151,42 +151,46 @@ sequence|table|31759|31761|1
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <sequence id="27" parent="18" name="department_department_id_seq">
-      <ObjectId>31778</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <language id="27" parent="3" name="c"/>
+    <language id="28" parent="3" name="internal"/>
+    <language id="29" parent="3" name="plpgsql"/>
+    <language id="30" parent="3" name="sql"/>
+    <sequence id="31" parent="18" name="department_department_id_seq">
+      <ObjectId>43004</ObjectId>
+      <StateNumber>2931</StateNumber>
       <Owner>user</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
+      <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="28" parent="18" name="position_type_postype_id_seq">
-      <ObjectId>31767</ObjectId>
-      <StateNumber>2152</StateNumber>
+    <sequence id="32" parent="18" name="position_type_postype_id_seq">
+      <ObjectId>42993</ObjectId>
+      <StateNumber>2930</StateNumber>
       <Owner>user</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
+      <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="29" parent="18" name="work_position_position_id_seq">
-      <ObjectId>31793</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <sequence id="33" parent="18" name="work_position_position_id_seq">
+      <ObjectId>43019</ObjectId>
+      <StateNumber>2932</StateNumber>
       <Owner>user</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
+      <DataType>integer|0s</DataType>
     </sequence>
-    <sequence id="30" parent="18" name="worker_worker_id_seq">
-      <ObjectId>31759</ObjectId>
-      <StateNumber>2151</StateNumber>
+    <sequence id="34" parent="18" name="worker_worker_id_seq">
+      <ObjectId>42985</ObjectId>
+      <StateNumber>2929</StateNumber>
       <Owner>user</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
-      <DataType>integer</DataType>
+      <DataType>integer|0s</DataType>
     </sequence>
-    <object-type id="31" parent="18" name="degree_type">
-      <ObjectId>31750</ObjectId>
+    <object-type id="35" parent="18" name="degree_type">
+      <ObjectId>42976</ObjectId>
       <Owner>user</Owner>
-      <StateNumber>2150</StateNumber>
+      <StateNumber>2928</StateNumber>
       <SubKind>enum</SubKind>
       <Labels>without_degree
 bachelor
@@ -194,284 +198,284 @@ master
 doctor</Labels>
       <SubCategory>enum</SubCategory>
     </object-type>
-    <table id="32" parent="18" name="department">
-      <ObjectId>31780</ObjectId>
+    <table id="36" parent="18" name="department">
+      <ObjectId>43006</ObjectId>
       <Outdated>1</Outdated>
       <Owner>user</Owner>
-      <StateNumber>2153</StateNumber>
+      <StateNumber>2931</StateNumber>
     </table>
-    <table id="33" parent="18" name="position_type">
-      <ObjectId>31769</ObjectId>
+    <table id="37" parent="18" name="position_type">
+      <ObjectId>42995</ObjectId>
       <Outdated>1</Outdated>
       <Owner>user</Owner>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
     </table>
-    <table id="34" parent="18" name="work_position">
-      <ObjectId>31795</ObjectId>
+    <table id="38" parent="18" name="work_position">
+      <ObjectId>43021</ObjectId>
       <Outdated>1</Outdated>
       <Owner>user</Owner>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
     </table>
-    <table id="35" parent="18" name="worker">
-      <ObjectId>31761</ObjectId>
+    <table id="39" parent="18" name="worker">
+      <ObjectId>42987</ObjectId>
       <Outdated>1</Outdated>
       <Owner>user</Owner>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
     </table>
-    <column id="36" parent="32" name="department_id">
+    <column id="40" parent="36" name="department_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2153</StateNumber>
+      <StateNumber>2931</StateNumber>
       <DefaultExpression>nextval(&apos;department_department_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="37" parent="32" name="department_name">
+    <column id="41" parent="36" name="department_name">
       <Position>2</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2153</StateNumber>
+      <StateNumber>2931</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="32" name="head_department">
+    <column id="42" parent="36" name="head_department">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>2153</StateNumber>
+      <StateNumber>2931</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="39" parent="32" name="department_pkey">
-      <ObjectId>31784</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <index id="43" parent="36" name="department_pkey">
+      <ObjectId>43010</ObjectId>
+      <StateNumber>2931</StateNumber>
       <ColNames>department_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="40" parent="32" name="department_department_name_key">
-      <ObjectId>31786</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <index id="44" parent="36" name="department_department_name_key">
+      <ObjectId>43012</ObjectId>
+      <StateNumber>2931</StateNumber>
       <ColNames>department_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="32" name="department_pkey">
-      <ObjectId>31785</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <key id="45" parent="36" name="department_pkey">
+      <ObjectId>43011</ObjectId>
+      <StateNumber>2931</StateNumber>
       <ColNames>department_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>department_pkey</UnderlyingIndexName>
     </key>
-    <key id="42" parent="32" name="department_department_name_key">
-      <ObjectId>31787</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <key id="46" parent="36" name="department_department_name_key">
+      <ObjectId>43013</ObjectId>
+      <StateNumber>2931</StateNumber>
       <ColNames>department_name</ColNames>
       <UnderlyingIndexName>department_department_name_key</UnderlyingIndexName>
     </key>
-    <foreign-key id="43" parent="32" name="department_head_department_fkey">
-      <ObjectId>31788</ObjectId>
-      <StateNumber>2153</StateNumber>
+    <foreign-key id="47" parent="36" name="department_head_department_fkey">
+      <ObjectId>43014</ObjectId>
+      <StateNumber>2931</StateNumber>
       <ColNames>head_department</ColNames>
-      <RefTableId>31780</RefTableId>
+      <RefTableId>43006</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>department</RefTableName>
       <RefKeyName>department_pkey</RefKeyName>
       <RefColNames>department_id</RefColNames>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <column id="44" parent="33" name="postype_id">
+    <column id="48" parent="37" name="postype_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2152</StateNumber>
+      <StateNumber>2930</StateNumber>
       <DefaultExpression>nextval(&apos;position_type_postype_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="45" parent="33" name="postype_name">
+    <column id="49" parent="37" name="postype_name">
       <Position>2</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2152</StateNumber>
+      <StateNumber>2930</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="33" name="responsibilities">
+    <column id="50" parent="37" name="responsibilities">
       <Position>3</Position>
       <DataType>varchar(800)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2152</StateNumber>
+      <StateNumber>2930</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="47" parent="33" name="salary">
+    <column id="51" parent="37" name="salary">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2152</StateNumber>
+      <StateNumber>2930</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="48" parent="33" name="position_type_pkey">
-      <ObjectId>31776</ObjectId>
-      <StateNumber>2152</StateNumber>
+    <index id="52" parent="37" name="position_type_pkey">
+      <ObjectId>43002</ObjectId>
+      <StateNumber>2930</StateNumber>
       <ColNames>postype_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="49" parent="33" name="position_type_pkey">
-      <ObjectId>31777</ObjectId>
-      <StateNumber>2152</StateNumber>
+    <key id="53" parent="37" name="position_type_pkey">
+      <ObjectId>43003</ObjectId>
+      <StateNumber>2930</StateNumber>
       <ColNames>postype_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>position_type_pkey</UnderlyingIndexName>
     </key>
-    <column id="50" parent="34" name="position_id">
+    <column id="54" parent="38" name="position_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <DefaultExpression>nextval(&apos;work_position_position_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="51" parent="34" name="worker_id">
+    <column id="55" parent="38" name="worker_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="52" parent="34" name="postype_id">
+    <column id="56" parent="38" name="postype_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="53" parent="34" name="appointment_date">
+    <column id="57" parent="38" name="appointment_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="54" parent="34" name="retire_date">
+    <column id="58" parent="38" name="retire_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="55" parent="34" name="work_rate">
+    <column id="59" parent="38" name="work_rate">
       <Position>6</Position>
       <DataType>numeric(4,3 digit)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="56" parent="34" name="department_id">
+    <column id="60" parent="38" name="department_id">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2154</StateNumber>
+      <StateNumber>2932</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="57" parent="34" name="work_position_pkey">
-      <ObjectId>31799</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <index id="61" parent="38" name="work_position_pkey">
+      <ObjectId>43025</ObjectId>
+      <StateNumber>2932</StateNumber>
       <ColNames>position_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="58" parent="34" name="work_position_pkey">
-      <ObjectId>31800</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <key id="62" parent="38" name="work_position_pkey">
+      <ObjectId>43026</ObjectId>
+      <StateNumber>2932</StateNumber>
       <ColNames>position_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>work_position_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="59" parent="34" name="work_position_worker_id_fkey">
-      <ObjectId>31801</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <foreign-key id="63" parent="38" name="work_position_worker_id_fkey">
+      <ObjectId>43027</ObjectId>
+      <StateNumber>2932</StateNumber>
       <ColNames>worker_id</ColNames>
-      <RefTableId>31761</RefTableId>
+      <RefTableId>42987</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>worker</RefTableName>
       <RefKeyName>worker_pkey</RefKeyName>
       <RefColNames>worker_id</RefColNames>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <foreign-key id="60" parent="34" name="work_position_postype_id_fkey">
-      <ObjectId>31806</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <foreign-key id="64" parent="38" name="work_position_postype_id_fkey">
+      <ObjectId>43032</ObjectId>
+      <StateNumber>2932</StateNumber>
       <ColNames>postype_id</ColNames>
-      <RefTableId>31769</RefTableId>
+      <RefTableId>42995</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>position_type</RefTableName>
       <RefKeyName>position_type_pkey</RefKeyName>
       <RefColNames>postype_id</RefColNames>
     </foreign-key>
-    <foreign-key id="61" parent="34" name="work_position_department_id_fkey">
-      <ObjectId>31811</ObjectId>
-      <StateNumber>2154</StateNumber>
+    <foreign-key id="65" parent="38" name="work_position_department_id_fkey">
+      <ObjectId>43037</ObjectId>
+      <StateNumber>2932</StateNumber>
       <ColNames>department_id</ColNames>
-      <RefTableId>31780</RefTableId>
+      <RefTableId>43006</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>department</RefTableName>
       <RefKeyName>department_pkey</RefKeyName>
       <RefColNames>department_id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="62" parent="35" name="worker_id">
+    <column id="66" parent="39" name="worker_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
+      <StateNumber>2929</StateNumber>
       <DefaultExpression>nextval(&apos;worker_worker_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="63" parent="35" name="name">
+    <column id="67" parent="39" name="name">
       <Position>2</Position>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
+      <StateNumber>2929</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="64" parent="35" name="birth_date">
+    <column id="68" parent="39" name="birth_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
+      <StateNumber>2929</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="65" parent="35" name="address">
+    <column id="69" parent="39" name="address">
       <Position>4</Position>
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
+      <StateNumber>2929</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="66" parent="35" name="phone_number">
+    <column id="70" parent="39" name="phone_number">
       <Position>5</Position>
-      <DataType>char(20)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
-      <TypeId>1042</TypeId>
+      <StateNumber>2929</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="67" parent="35" name="hire_date">
+    <column id="71" parent="39" name="hire_date">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
+      <StateNumber>2929</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="68" parent="35" name="education_degree">
+    <column id="72" parent="39" name="education_degree">
       <Position>7</Position>
       <DataType>degree_type|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>2151</StateNumber>
-      <TypeId>31750</TypeId>
+      <StateNumber>2929</StateNumber>
+      <TypeId>42976</TypeId>
     </column>
-    <index id="69" parent="35" name="worker_pkey">
-      <ObjectId>31765</ObjectId>
-      <StateNumber>2151</StateNumber>
+    <index id="73" parent="39" name="worker_pkey">
+      <ObjectId>42991</ObjectId>
+      <StateNumber>2929</StateNumber>
       <ColNames>worker_id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="70" parent="35" name="worker_pkey">
-      <ObjectId>31766</ObjectId>
-      <StateNumber>2151</StateNumber>
+    <key id="74" parent="39" name="worker_pkey">
+      <ObjectId>42992</ObjectId>
+      <StateNumber>2929</StateNumber>
       <ColNames>worker_id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>worker_pkey</UnderlyingIndexName>

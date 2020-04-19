@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 import spring.dao.DepartmentDAO;
 import spring.dao.common.GenericDAO;
 import spring.entity.Department;
+import spring.entity.WorkPosition;
+import spring.entity.Worker;
 import spring.service.DepartmentService;
 import spring.service.common.GenericServiceImpl;
 
@@ -15,12 +17,8 @@ import java.util.List;
 @Transactional
 public class DepartmentServiceImpl extends GenericServiceImpl<Department, Long> implements DepartmentService {
 
-    private DepartmentDAO departmentDAO;
-
     @Autowired
-    public void setDepartmentDAO(DepartmentDAO departmentDAO) {
-        this.departmentDAO = departmentDAO;
-    }
+    private DepartmentDAO departmentDAO;
 
     @Override
     protected GenericDAO<Department, Long> getDAO() {
@@ -28,12 +26,17 @@ public class DepartmentServiceImpl extends GenericServiceImpl<Department, Long> 
     }
 
     @Override
-    public List<Department> getByHeadDepartment(Long head_department) {
-        return departmentDAO.getByHeadDepartment(head_department);
+    public List<Department> getHeadDepartments() {
+        return departmentDAO.getHeadDepartments();
     }
 
     @Override
-    public Department getByDepartmentName(String department_name) {
-        return departmentDAO.getByDepartmentName(department_name);
+    public List<WorkPosition> getDepartmentWorkers(Long department_id) {
+        return departmentDAO.getDepartmentWorkers(department_id);
+    }
+
+    @Override
+    public List<WorkPosition> getDepartmentVacancy(Long department_id) {
+        return departmentDAO.getDepartmentVacancy(department_id);
     }
 }

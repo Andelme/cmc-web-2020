@@ -19,15 +19,11 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource("classpath:database.properties")
+@PropertySource("/WEB-INF/database.properties")
 public class HibernateConfig {
 
-    private Environment env;
-
     @Autowired
-    public void setEnv(Environment env) {
-        this.env = env;
-    }
+    private Environment env;
 
     private Properties hibernateProperties() {
         final Properties hibernateProperties = new Properties();

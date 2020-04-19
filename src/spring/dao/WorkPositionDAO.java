@@ -9,5 +9,9 @@ public interface WorkPositionDAO extends GenericDAO<WorkPosition, Long> {
 
     List<WorkPosition> getVacancy();
 
-    List<WorkPosition> getByWorkerId(Long worker_id);
+    List<WorkPosition> getWorkerHistory(Long worker_id);
+
+    WorkPosition getWorkerCurrent(Long worker_id);
+
+    List<WorkPosition> getCurrentPositions();
 }

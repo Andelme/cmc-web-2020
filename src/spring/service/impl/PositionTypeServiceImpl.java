@@ -13,12 +13,8 @@ import spring.service.common.GenericServiceImpl;
 @Transactional
 public class PositionTypeServiceImpl extends GenericServiceImpl<PositionType, Long> implements PositionTypeService {
 
-    private PositionTypeDAO positionTypeDAO;
-
     @Autowired
-    public void setPositionTypeDAO(PositionTypeDAO positionTypeDAO) {
-        this.positionTypeDAO = positionTypeDAO;
-    }
+    private PositionTypeDAO positionTypeDAO;
 
     @Override
     protected GenericDAO<PositionType, Long> getDAO() {

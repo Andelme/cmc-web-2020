@@ -5,6 +5,7 @@ import spring.dao.common.GenericDAOImpl;
 import spring.entity.WorkPosition;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -21,10 +22,30 @@ public class WorkPositionDAOImpl extends GenericDAOImpl<WorkPosition, Long> impl
     }
 
     @Override
-    public List<WorkPosition> getByWorkerId(Long worker_id) {
+    public List<WorkPosition> getWorkerHistory(Long worker_id) {
         TypedQuery<WorkPosition> query = getCurrentSession().createQuery(
-                "SELECT e FROM Worker w, WorkPosition e WHERE w.worker_id = :worker_id AND e.worker_id = w"
+                "SELECT e FROM WorkPosition e WHERE e.worker_id.worker_id = :worker_id"
         ).setParameter("worker_id", worker_id);
+        return query.getResultList();
+    }
+
+    @Override
+    public WorkPosition getWorkerCurrent(Long worker_id) {
+        try {
+            TypedQuery<WorkPosition> query = getCurrentSession().createQuery(
+                    "SELECT e FROM WorkPosition e WHERE e.worker_id.worker_id = :worker_id AND e.retire_date = NULL"
+            ).setParameter("worker_id", worker_id);
+            return query.getSingleResult();
+        } catch (NoResultException ex) {
+            return null;
+        }
+    }
+
+    @Override
+    public List<WorkPosition> getCurrentPositions() {
+        TypedQuery<WorkPosition> query = getCurrentSession().createQuery(
+                "SELECT e FROM WorkPosition e WHERE e.retire_date = NULL AND e.worker_id != NULL"
+        );
         return query.getResultList();
     }
 }

@@ -2,6 +2,7 @@ package spring.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "department", schema = "public", catalog = "personnel")
@@ -18,6 +19,9 @@ public class Department {
     @ManyToOne
     @JoinColumn(name = "head_department")
     private Department head_department;
+
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "head_department")
+    private Set<Department> child_departments;
 
     public Department() {}
     public Department (String department_name, Department head_department) {
@@ -44,6 +48,13 @@ public class Department {
     }
     public Department getHead_department() {
         return head_department;
+    }
+
+    public void setChild_departments(Set<Department> child_departments) {
+        this.child_departments = child_departments;
+    }
+    public Set<Department> getChild_departments() {
+        return child_departments;
     }
 
     @Override

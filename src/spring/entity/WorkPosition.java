@@ -1,7 +1,7 @@
 package spring.entity;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+import java.sql.Date;
 import java.util.Objects;
 
 @Entity
@@ -16,28 +16,28 @@ public class WorkPosition {
     @JoinColumn(name = "worker_id")
     private Worker worker_id;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "postype_id", nullable = false)
     private PositionType postype_id;
 
     @Basic
     @Column(name = "appointment_date")
-    private Timestamp appointment_date;
+    private Date appointment_date;
 
     @Basic
     @Column(name = "retire_date")
-    private Timestamp retire_date;
+    private Date retire_date;
 
     @Basic
     @Column(name = "work_rate", nullable = false, precision = 4)
     private Double work_rate;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "department_id", nullable = false)
     private Department department_id;
 
     public WorkPosition() {}
-    public WorkPosition(Worker worker_id, PositionType postype_id, Timestamp appointment_date, Timestamp retire_date, Double work_rate, Department department_id) {
+    public WorkPosition(Worker worker_id, PositionType postype_id, Date appointment_date, Date retire_date, Double work_rate, Department department_id) {
         this.worker_id = worker_id;
         this.postype_id = postype_id;
         this.appointment_date = appointment_date;
@@ -67,17 +67,17 @@ public class WorkPosition {
         return postype_id;
     }
 
-    public void setAppointment_date(Timestamp appointment_date) {
+    public void setAppointment_date(Date appointment_date) {
         this.appointment_date = appointment_date;
     }
-    public Timestamp getAppointment_date() {
+    public Date getAppointment_date() {
         return appointment_date;
     }
 
-    public void setRetire_date(Timestamp retire_date) {
+    public void setRetire_date(Date retire_date) {
         this.retire_date = retire_date;
     }
-    public Timestamp getRetire_date() {
+    public Date getRetire_date() {
         return retire_date;
     }
 

@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<project basedir = "." default = "build-war" name = "webapp">
+    <property file = "../../build.properties"/>
+
+    <target name = "init">
+        <mkdir dir = "${webapp.dir}/WEB-INF/classes"/>
+        <mkdir dir = "${webapp.dir}/WEB-INF/lib"/>
+    </target>
+
+    <target name = "build-war" depends = "init">
+        <copy todir = "${webapp.dir}/WEB-INF/classes">
+            <fileset dir = "${build.dir}" includes = "**/*.*"/>
+            <fileset dir = "${web.dir}" includes = "**/*.*"/>
+        </copy>
+
+        <copy todir = "${webapp.dir}/WEB-INF/lib" flatten = "true">
+            <fileset dir = "${lib.dir}" includes = "**/*.*"/>
+        </copy>
+
+        <copy todir = "${webapp.dir}/WEB-INF">
+            <fileset dir = "${web.dir}/WEB-INF" includes = "**/*.*"/>
+        </copy>
+
+        <copy todir = "${webapp.dir}">
+            <fileset dir = "${web.dir}" includes = "**/*.*"/>
+        </copy>
+
+        <jar jarfile = "${dist.dir}/${war.file}" basedir = "${webapp.dir}"/>
+    </target>
+</project>

@@ -1,13 +1,16 @@
 package spring.service;
 
 import spring.entity.Department;
+import spring.entity.WorkPosition;
 import spring.service.common.GenericService;
 
 import java.util.List;
 
 public interface DepartmentService extends GenericService<Department, Long> {
 
-    List<Department> getByHeadDepartment(Long head_department);
+    List<Department> getHeadDepartments();
 
-    Department getByDepartmentName(String department_name);
+    List<WorkPosition> getDepartmentWorkers(Long department_id);
+
+    List<WorkPosition> getDepartmentVacancy(Long department_id);
 }
