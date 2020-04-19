@@ -26,6 +26,11 @@ public class DepartmentServiceImpl extends GenericServiceImpl<Department, Long> 
     }
 
     @Override
+    public Department getByDepartmentName(String department_name) {
+        return departmentDAO.getByDepartmentName(department_name);
+    }
+
+    @Override
     public List<Department> getHeadDepartments() {
         return departmentDAO.getHeadDepartments();
     }

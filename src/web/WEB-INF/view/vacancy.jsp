@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/view/includes.jsp" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Вакансии</title>

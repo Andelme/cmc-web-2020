@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/view/includes.jsp" %>
+<!DOCTYPE html>
 <html>
 <head>
     <c:choose>
@@ -14,10 +15,9 @@
 <body>
 <%@ include file="/WEB-INF/view/header.jsp" %>
 
-<form:form modelAttribute="worker"
-           method="POST">
-    <form:input type = "hidden" path = "worker_id" value = "${worker.worker_id}"/>
-    <form:input type = "hidden" path="hire_date" value = "${worker.hire_date}"/>
+<form:form modelAttribute="worker" method="POST">
+    <form:input type="hidden" path="worker_id" value="${worker.worker_id}"/>
+    <form:input type="hidden" path="hire_date" value="${worker.hire_date}"/>
     <div>
         <label for="name">ФИО</label>
         <form:input type="text" path="name" id="name" value="${worker.name}"/>
@@ -32,7 +32,7 @@
     </div>
     <div>
         <label for="phone_number">Номер телефона</label>
-        <form:input type="tel" path="phone_number" id="phone_number" value="${worker.phone_number}"/>
+        <form:input type="tel" path="phone_number" id="phone_number" value="${worker.phone_number}" placeholder="+7(***)***-**-**"/>
     </div>
     <div>
         <label for="name">Образование</label>

@@ -17,25 +17,17 @@
     <ant antfile="${src.dir}/build.xml"/>
   </target>
 
-<!--  <target name="run-tests" depends="setup-db, build">-->
-<!--    <ant antfile="test/build.xml"/>-->
-<!--  </target>-->
+  <target name = "build-war">
+    <ant antfile = "${web.dir}/build.xml"/>
+  </target>
 
   <target name="clean">
-    <delete failonerror="false" includeEmptyDirs="true">
-      <fileset dir="${build.dir}"/>
-      <fileset dir="${report.dir}"/>
-    </delete>
+    <delete failonerror="false" dir="${build.dir}"/>
+    <delete failonerror="false" dir="${report.dir}"/>
   </target>
 
   <target name = "clean-war">
-    <delete failonerror = "false">
-      <fileset dir = "${webapp.dir}"/>
-    </delete>
-  </target>
-
-  <target name = "build-war">
-    <ant antfile = "${web.dir}/build.xml"/>
+    <delete failonerror = "false" dir = "${webapp.dir}"/>
   </target>
 
   <target name = "start-server">
@@ -45,7 +37,7 @@
     </asadmin>
   </target>
 
-  <target name = "shutdown-server">
+  <target name = "stop-server">
     <asadmin failonerror = "true">
       <arg value = "stop-domain"/>
       <arg value = "${glassfish.domain}"/>
@@ -67,6 +59,6 @@
     </asadmin>
   </target>
 
-  <target name="all" depends="clean, setup-db, build"/>
+  <target name="all" depends="clean, clean-war, setup-db, build, build-war, start-server, deploy"/>
 
 </project>

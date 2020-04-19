@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/view/includes.jsp" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Должности</title>
@@ -10,7 +11,7 @@
     <c:forEach var="positionType" items="${postypeList}">
         <li>
             <a href="postype?id=${positionType.postype_id}">
-                <div>${positionType.postype_name}</div>
+                ${positionType.postype_name}
             </a>
         </li>
     </c:forEach>

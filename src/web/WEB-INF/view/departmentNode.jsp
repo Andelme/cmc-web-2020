@@ -1,8 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/view/includes.jsp" %>
+<!DOCTYPE html>
 
 <a href="department?id=${department.department_id}">
-    <div>${department.department_name}</div>
+    ${department.department_name}
 </a>
 
 <ul>

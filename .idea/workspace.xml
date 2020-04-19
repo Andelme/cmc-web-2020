@@ -7,67 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1eeb922-9775-4408-839b-7c7262730cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/converter/DepartmentIdToObjConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/converter/PosTypeIdToObjConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/converter/WorkerIdToObjConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/department.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/departmentNode.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editDepartment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editPostype.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editWorker.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/includes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/postype.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/postypes.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/vacancy.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/worker.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/workers.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/web/resources/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_prac_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/personnel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116/storage_v2/_src_/database/personnel.INLaMg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1dd6d0ab-a580-4603-bf5d-ff647dd0a116/storage_v2/_src_/database/personnel.INLaMg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web-prac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-prac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init-db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/populate-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/populate-db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/config/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/PersonnelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/DepartmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/DepartmentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/WorkPositionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/WorkPositionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/WorkerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/WorkerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/impl/DepartmentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/impl/DepartmentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/impl/WorkPositionDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/impl/WorkPositionDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/dao/impl/WorkerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/dao/impl/WorkerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/WorkPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/WorkPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/WorkPositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/WorkPositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/WorkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/WorkerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/PositionTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/PositionTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/WorkPositionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/WorkPositionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/WorkerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/WorkerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/DepartmentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GenericTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PositionTypeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/WorkPositionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/WorkerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testng.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/glassfish-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/glassfish-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/glassfish-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/department.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/department.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/web/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/build.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +285,8 @@
       <workItem from="1586615666422" duration="294000" />
       <workItem from="1586617883812" duration="326000" />
       <workItem from="1586723543277" duration="56954000" />
-      <workItem from="1586967321404" duration="70208000" />
+      <workItem from="1586967321404" duration="71163000" />
+      <workItem from="1587296516457" duration="4883000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity and DAO classes">
       <created>1584825549497</created>
@@ -411,19 +359,19 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="298" y="104" key="#Web_Browsers/0.0.1440.900@0.0.1440.900" timestamp="1586611588827" />
-    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587289245023">
+    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587296538164">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587289245023" />
+    <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587296538164" />
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586850936586">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1586850936586" />
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1585027398416" />
-    <state x="431" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587290122505">
+    <state x="431" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587299406215">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="431" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1587290122505" />
+    <state x="431" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1587299406215" />
     <state x="525" y="404" width="512" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1586855767953">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -472,45 +420,41 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585046119383" />
-    <state width="958" height="311" key="GridCell.Tab.0.bottom" timestamp="1587294850797">
+    <state width="958" height="311" key="GridCell.Tab.0.bottom" timestamp="1587296387568">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587294850797" />
-    <state width="0" height="0" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587289960282" />
-    <state width="958" height="311" key="GridCell.Tab.0.center" timestamp="1587294850796">
+    <state width="958" height="311" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587296387568" />
+    <state width="958" height="311" key="GridCell.Tab.0.center" timestamp="1587296387567">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587294850796" />
-    <state width="0" height="0" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587289960281" />
-    <state width="958" height="311" key="GridCell.Tab.0.left" timestamp="1587294850796">
+    <state width="958" height="311" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587296387567" />
+    <state width="958" height="311" key="GridCell.Tab.0.left" timestamp="1587296387566">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587294850796" />
-    <state width="0" height="0" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587289960280" />
-    <state width="958" height="311" key="GridCell.Tab.0.right" timestamp="1587294850797">
+    <state width="958" height="311" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587296387566" />
+    <state width="958" height="311" key="GridCell.Tab.0.right" timestamp="1587296387568">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587294850797" />
-    <state width="0" height="0" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587289960281" />
-    <state width="958" height="311" key="GridCell.Tab.1.bottom" timestamp="1587294850799">
+    <state width="958" height="311" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587296387568" />
+    <state width="958" height="311" key="GridCell.Tab.1.bottom" timestamp="1587296387571">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587294850799" />
+    <state width="958" height="311" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587296387571" />
     <state width="958" height="311" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587289959887" />
-    <state width="958" height="311" key="GridCell.Tab.1.center" timestamp="1587294850798">
+    <state width="958" height="311" key="GridCell.Tab.1.center" timestamp="1587296387570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1587294850798" />
+    <state width="958" height="311" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1587296387570" />
     <state width="958" height="311" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1587289959885" />
-    <state width="958" height="311" key="GridCell.Tab.1.left" timestamp="1587294850798">
+    <state width="958" height="311" key="GridCell.Tab.1.left" timestamp="1587296387569">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1587294850798" />
+    <state width="958" height="311" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1587296387569" />
     <state width="958" height="311" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1587289959885" />
-    <state width="958" height="311" key="GridCell.Tab.1.right" timestamp="1587294850799">
+    <state width="958" height="311" key="GridCell.Tab.1.right" timestamp="1587296387570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1587294850799" />
+    <state width="958" height="311" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1587296387570" />
     <state width="958" height="311" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1587289959886" />
     <state x="121" y="63" key="SettingsEditor" timestamp="1587293040758">
       <screen x="0" y="0" width="1440" height="900" />

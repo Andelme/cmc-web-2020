@@ -6,12 +6,25 @@ import spring.entity.Department;
 import org.springframework.stereotype.Repository;
 import spring.entity.WorkPosition;
 
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
 @SuppressWarnings("unchecked")
 public class DepartmentDAOImpl extends GenericDAOImpl<Department, Long> implements DepartmentDAO {
+
+    @Override
+    public Department getByDepartmentName(String department_name) {
+        try {
+            TypedQuery<Department> query = getCurrentSession().createQuery(
+                    "SELECT e FROM Department e WHERE e.department_name = :department_name"
+            ).setParameter("department_name", department_name);
+            return query.getSingleResult();
+        } catch(NoResultException ex) {
+            return null;
+        }
+    }
 
     @Override
     public List<Department> getHeadDepartments() {

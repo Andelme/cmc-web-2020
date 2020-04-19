@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface DepartmentDAO extends GenericDAO<Department, Long> {
 
+    Department getByDepartmentName(String department_name);
+
     List<Department> getHeadDepartments();
 
     List<WorkPosition> getDepartmentWorkers(Long department_id);

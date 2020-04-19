@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/WEB-INF/view/includes.jsp" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>${department.department_name}</title>
@@ -8,7 +9,7 @@
 <%@ include file="/WEB-INF/view/header.jsp" %>
 <h2>${department.department_name}</h2>
 <div style="${department.head_department != null ? 'display:block' : 'display:none'}">
-    <h4>Головное подразделение</h4>
+    <h4>Головное подразделение</h4>s
     <a href="department?id=${department.head_department.department_id}">
         ${department.head_department.department_name}
     </a>

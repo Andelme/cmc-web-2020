@@ -10,7 +10,6 @@
 
     <target name="build">
         <mkdir dir="${build.dir}"/>
-        <copy file="${src.dir}/hibernate.cfg.xml" todir="${build.dir}"/>
 
         <javac includeantruntime="false"
                source="${jdk.version}" target="${jdk.version}"

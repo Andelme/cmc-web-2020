@@ -9,8 +9,7 @@
 
     <target name = "build-war" depends = "init">
         <copy todir = "${webapp.dir}/WEB-INF/classes">
-            <fileset dir = "${build.dir}" includes = "**/*.*"/>
-            <fileset dir = "${web.dir}" includes = "**/*.*"/>
+            <fileset dir = "${build.dir}" includes = "**/*.class"/>
         </copy>
 
         <copy todir = "${webapp.dir}/WEB-INF/lib" flatten = "true">
@@ -19,10 +18,6 @@
 
         <copy todir = "${webapp.dir}/WEB-INF">
             <fileset dir = "${web.dir}/WEB-INF" includes = "**/*.*"/>
-        </copy>
-
-        <copy todir = "${webapp.dir}">
-            <fileset dir = "${web.dir}" includes = "**/*.*"/>
         </copy>
 
         <jar jarfile = "${dist.dir}/${war.file}" basedir = "${webapp.dir}"/>
