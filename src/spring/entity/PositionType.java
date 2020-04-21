@@ -1,6 +1,9 @@
 package spring.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 
 @Entity
@@ -12,14 +15,17 @@ public class PositionType {
     private Long postype_id;
 
     @Basic
+    @NotBlank
     @Column(name = "postype_name", nullable = false, length = 40)
     private String postype_name;
 
     @Basic
+    @NotBlank
     @Column(name = "responsibilities", nullable = false, length = 800)
     private String responsibilities;
 
     @Basic
+    @NotNull
     @Column(name = "salary", nullable = false)
     private Integer salary;
 

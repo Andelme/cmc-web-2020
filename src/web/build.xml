@@ -1,5 +1,5 @@
 <?xml version = "1.0" encoding = "utf-8"?>
-<project basedir = "." default = "build-war" name = "webapp">
+<project basedir = "." default = "build-war" name = "web">
     <property file = "../../build.properties"/>
 
     <target name = "init">
@@ -18,6 +18,10 @@
 
         <copy todir = "${webapp.dir}/WEB-INF">
             <fileset dir = "${web.dir}/WEB-INF" includes = "**/*.*"/>
+        </copy>
+
+        <copy todir = "${webapp.dir}">
+            <fileset dir="${web.dir}" includes = "resources/*.*"/>
         </copy>
 
         <jar jarfile = "${dist.dir}/${war.file}" basedir = "${webapp.dir}"/>

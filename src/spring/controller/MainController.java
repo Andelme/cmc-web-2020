@@ -3,10 +3,7 @@ package spring.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import spring.entity.Department;
 import spring.entity.PositionType;
@@ -17,6 +14,7 @@ import spring.service.PositionTypeService;
 import spring.service.WorkPositionService;
 import spring.service.WorkerService;
 
+import javax.validation.Valid;
 import java.sql.Date;
 
 @Controller
@@ -59,8 +57,16 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/department_add", method = RequestMethod.POST)
-    public ModelAndView addDepartment(@ModelAttribute("department") Department department, BindingResult result) {
+    public ModelAndView addDepartment(@Valid @ModelAttribute("department") Department department, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
+        if (departmentService.getByDepartmentName(department.getDepartment_name()) != null) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         departmentService.save(department);
         modelAndView.setViewName("redirect:department?id=" + department.getDepartment_id());
         return modelAndView;
@@ -74,8 +80,18 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/department_edit", method = RequestMethod.POST)
-    public ModelAndView editDepartment(@ModelAttribute("department") Department department, BindingResult result) {
+    public ModelAndView editDepartment(@Valid @ModelAttribute("department") Department department,
+                                       BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
+        Department test = departmentService.getByDepartmentName(department.getDepartment_name());
+        if (test != null && !test.getDepartment_id().equals(department.getDepartment_id())) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         departmentService.update(department);
         modelAndView.setViewName("redirect:department?id=" + department.getDepartment_id());
         return modelAndView;
@@ -89,8 +105,12 @@ public class MainController {
     }
     @RequestMapping(value = "/appoint", method = RequestMethod.POST)
     public ModelAndView appointWorker(@RequestParam(value="dep", required = false) Long department_id,
-                                      @ModelAttribute("workPosition") WorkPosition workPosition, BindingResult result) {
+                                      @Valid @ModelAttribute("workPosition") WorkPosition workPosition, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         if (workPosition.getWorker_id() == null) {
             if (department_id != null) modelAndView.setViewName("redirect:department?id=" + department_id);
             else modelAndView.setViewName("redirect:vacancy");
@@ -105,8 +125,12 @@ public class MainController {
     }
     @RequestMapping(value = "/position_add", method = RequestMethod.POST)
     public ModelAndView addDepartment(@RequestParam(value="dep", required = false) Long department_id,
-                                      @ModelAttribute("newPos") WorkPosition newPos, BindingResult result) {
+                                      @Valid @ModelAttribute("newPos") WorkPosition newPos, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         if (newPos.getWorker_id() != null) {
             workPositionService.unbindWorker(newPos.getWorker_id().getWorker_id());
             newPos.setAppointment_date(new Date(System.currentTimeMillis()));
@@ -156,8 +180,12 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/postype_add", method = RequestMethod.POST)
-    public ModelAndView addPostype(@ModelAttribute("positionType") PositionType positionType, BindingResult result) {
+    public ModelAndView addPostype(@Valid @ModelAttribute("positionType") PositionType positionType, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         positionTypeService.save(positionType);
         modelAndView.setViewName("redirect:postype?id=" + positionType.getPostype_id());
         return modelAndView;
@@ -170,8 +198,12 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/postype_edit", method = RequestMethod.POST)
-    public ModelAndView editPostype(@ModelAttribute("positionType") PositionType positionType, BindingResult result) {
+    public ModelAndView editPostype(@Valid @ModelAttribute("positionType") PositionType positionType, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         positionTypeService.update(positionType);
         modelAndView.setViewName("redirect:postype?id=" + positionType.getPostype_id());
         return modelAndView;
@@ -209,8 +241,12 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/worker_add", method = RequestMethod.POST)
-    public ModelAndView addWorker(@ModelAttribute("worker") Worker worker, BindingResult result) {
+    public ModelAndView addWorker(@Valid @ModelAttribute("worker") Worker worker, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         worker.setHire_date(new Date(System.currentTimeMillis()));
         workerService.save(worker);
         modelAndView.setViewName("redirect:worker?id=" + worker.getWorker_id());
@@ -224,8 +260,12 @@ public class MainController {
         return modelAndView;
     }
     @RequestMapping(value = "/worker_edit", method = RequestMethod.POST)
-    public ModelAndView editWorker(@ModelAttribute("worker") Worker worker, BindingResult result) {
+    public ModelAndView editWorker(@Valid @ModelAttribute("worker") Worker worker, BindingResult result) {
         ModelAndView modelAndView = new ModelAndView();
+        if (result.hasErrors()) {
+            modelAndView.setViewName("errorPage");
+            return modelAndView;
+        }
         workerService.update(worker);
         modelAndView.setViewName("redirect:worker?id=" + worker.getWorker_id());
         return modelAndView;

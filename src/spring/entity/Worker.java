@@ -4,6 +4,9 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.sql.Date;
 import java.util.Objects;
 
@@ -23,32 +26,39 @@ public class Worker {
     private Long worker_id;
 
     @Basic
+    @NotBlank
     @Column(name = "name", nullable = false, length = 60)
     private String name;
 
     @Basic
+    @NotNull
     @Column(name = "birth_date", nullable = false)
     private Date birth_date;
 
     @Basic
+    @NotBlank
     @Column(name = "address", nullable = false, length = 200)
     private String address;
 
     @Basic
+    @Pattern(regexp = "^\\+7\\(\\d{3}\\)\\d{3}-\\d{2}-\\d{2}$")
     @Column(name = "phone_number", nullable = false, length = 20)
     private String phone_number;
 
     @Basic
-    @Column(name = "hire_date", nullable = false)
+    @Column(name = "hire_date")
     private Date hire_date;
 
+    @NotNull
     @Enumerated(EnumType.STRING)
     @Type(type = "pgsql_enum")
     @Column(name = "education_degree", nullable = false,
             columnDefinition = "enum('without_degree', 'bachelor', 'master', 'doctor')")
     private DegreeType education_degree;
 
-    public Worker() {}
+    public Worker() {
+        this.hire_date = Date.valueOf("1900-01-01");
+    }
     public Worker(String name, Date birth_date, String address,
                   String phone_number, Date hire_date, DegreeType education_degree) {
         this.name = name;

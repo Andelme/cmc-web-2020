@@ -10,16 +10,13 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 import javax.sql.DataSource;
-import java.util.Locale;
 import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource("/WEB-INF/database.properties")
+@PropertySource("WEB-INF/database.properties")
 public class HibernateConfig {
 
     @Autowired
@@ -32,13 +29,6 @@ public class HibernateConfig {
         hibernateProperties.setProperty("hibernate.show_sql", env.getRequiredProperty("hibernate.show_sql"));
         hibernateProperties.setProperty("current_session_context_class", env.getRequiredProperty("current_session_context_class"));
         return hibernateProperties;
-    }
-
-    @Bean(name = "localeResolver")
-    public LocaleResolver localeResolver() {
-        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-        sessionLocaleResolver.setDefaultLocale(new Locale("ru_RU"));
-        return sessionLocaleResolver;
     }
 
     @Bean(name = "dataSource")

@@ -7,7 +7,6 @@ import spring.dao.DepartmentDAO;
 import spring.dao.common.GenericDAO;
 import spring.entity.Department;
 import spring.entity.WorkPosition;
-import spring.entity.Worker;
 import spring.service.DepartmentService;
 import spring.service.common.GenericServiceImpl;
 

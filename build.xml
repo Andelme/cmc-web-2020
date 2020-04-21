@@ -60,5 +60,6 @@
   </target>
 
   <target name="all" depends="clean, clean-war, setup-db, build, build-war, start-server, deploy"/>
-
+  <target name="redeploy" depends="undeploy, clean, clean-war, setup-db, build, build-war, deploy"/>
+  <target name="shutdown" depends="undeploy, stop-server"/>
 </project>

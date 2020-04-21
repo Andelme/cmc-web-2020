@@ -1,6 +1,8 @@
 package spring.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -13,6 +15,7 @@ public class Department {
     private Long department_id;
 
     @Basic
+    @NotBlank
     @Column(name = "department_name", nullable = false, length = 40)
     private String department_name;
 

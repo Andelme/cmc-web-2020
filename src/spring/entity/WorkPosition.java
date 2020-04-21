@@ -1,6 +1,8 @@
 package spring.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.sql.Date;
 import java.util.Objects;
 
@@ -16,6 +18,7 @@ public class WorkPosition {
     @JoinColumn(name = "worker_id")
     private Worker worker_id;
 
+    @NotNull
     @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "postype_id", nullable = false)
     private PositionType postype_id;
@@ -29,9 +32,11 @@ public class WorkPosition {
     private Date retire_date;
 
     @Basic
+    @NotNull
     @Column(name = "work_rate", nullable = false, precision = 4)
     private Double work_rate;
 
+    @NotNull
     @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "department_id", nullable = false)
     private Department department_id;

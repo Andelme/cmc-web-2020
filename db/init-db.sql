@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS WORKER (
     birth_date DATE NOT NULL,
     address VARCHAR(200) NOT NULL,
     phone_number VARCHAR(20) NOT NULL,
-    hire_date DATE NOT NULL,
+    hire_date DATE,
     education_degree DEGREE_TYPE NOT NULL
 );
 CREATE TABLE IF NOT EXISTS POSITION_TYPE (
