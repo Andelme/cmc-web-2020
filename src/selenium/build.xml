@@ -14,7 +14,7 @@
     </taskdef>
     <target name="runtests">
         <mkdir dir="${report.dir}"/>
-        <testng classpathref="classpath.test" outputdir="${report.selenium.dir}">
+        <testng classpathref="classpath.test" outputdir="${report.dir}">
             <xmlfileset dir="${selenium.dir}" includes="testng.xml"/>
         </testng>
     </target>

@@ -7,40 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1eeb922-9775-4408-839b-7c7262730cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/errorPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/guava_29_0_jre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/personnel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/personnel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/web-prac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/web-prac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/init-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/init-db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/PositionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selenium/SysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/selenium/SysTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spring/entity/WorkPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/WorkPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/entity/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/entity/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/WorkerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/WorkerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/DepartmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/DepartmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/service/impl/WorkerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/service/impl/WorkerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/validator/DepartmentValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/validator/PositionTypeValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/validator/WorkPositionValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/validator/WorkerValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/department.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/department.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/editDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/editPostype.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editPostype.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/editWorker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/editWorker.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/includes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/includes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/postype.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/postype.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/postypes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/postypes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/vacancy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/vacancy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/worker.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/worker.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/WEB-INF/view/workers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/WEB-INF/view/workers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web/resources/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/web/resources/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +75,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -123,7 +95,7 @@
       <recent name="$PROJECT_DIR$/web" />
     </key>
   </component>
-  <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.1">
+  <component name="RunManager" selected="TestNG.SysTest">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -196,16 +168,16 @@
         </option>
       </method>
     </configuration>
-    <configuration name="DepartmentTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SysTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-prac" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DepartmentTest" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SysTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -213,51 +185,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTypeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SysTest.linkNavigationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-prac" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.PositionTypeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SysTest" />
+      <option name="METHOD_NAME" value="linkNavigationTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkPositionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SysTest.postypeEditTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-prac" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.WorkPositionTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SysTest" />
+      <option name="METHOD_NAME" value="postypeEditTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SysTest.vacancyPositionEditTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-prac" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="selenium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.WorkerTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SysTest" />
+      <option name="METHOD_NAME" value="vacancyPositionEditTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SysTest.workerEditTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-prac" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.SysTest" />
+      <option name="METHOD_NAME" value="workerEditTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -266,17 +259,19 @@
     </configuration>
     <list>
       <item itemvalue="GlassFish Server.GlassFish 5.0.1" />
-      <item itemvalue="TestNG.DepartmentTest" />
-      <item itemvalue="TestNG.PositionTypeTest" />
-      <item itemvalue="TestNG.WorkerTest" />
-      <item itemvalue="TestNG.WorkPositionTest" />
+      <item itemvalue="TestNG.SysTest.linkNavigationTest" />
+      <item itemvalue="TestNG.SysTest.postypeEditTest" />
+      <item itemvalue="TestNG.SysTest.workerEditTest" />
+      <item itemvalue="TestNG.SysTest.vacancyPositionEditTest" />
+      <item itemvalue="TestNG.SysTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DepartmentTest" />
-        <item itemvalue="TestNG.PositionTypeTest" />
-        <item itemvalue="TestNG.WorkerTest" />
-        <item itemvalue="TestNG.WorkPositionTest" />
+        <item itemvalue="TestNG.SysTest" />
+        <item itemvalue="TestNG.SysTest.vacancyPositionEditTest" />
+        <item itemvalue="TestNG.SysTest.workerEditTest" />
+        <item itemvalue="TestNG.SysTest.postypeEditTest" />
+        <item itemvalue="TestNG.SysTest.linkNavigationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +307,7 @@
       <workItem from="1586617883812" duration="326000" />
       <workItem from="1586723543277" duration="56954000" />
       <workItem from="1586967321404" duration="71163000" />
-      <workItem from="1587296516457" duration="53119000" />
+      <workItem from="1587296516457" duration="62509000" />
     </task>
     <task id="LOCAL-00001" summary="Add Entity and DAO classes">
       <created>1584825549497</created>
@@ -393,10 +388,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="163" y="90" width="1071" height="698" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1587296538164" />
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586850936586">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587547278525">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1586850936586" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1587547278525" />
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.877@0.23.1440.877" timestamp="1585027398416" />
     <state x="431" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587299406215">
       <screen x="0" y="0" width="1440" height="900" />
@@ -450,50 +445,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1585046119383" />
-    <state width="958" height="311" key="GridCell.Tab.0.bottom" timestamp="1587500216656">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1587547211274">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587500216656" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587547211274" />
     <state width="958" height="311" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587494405610" />
-    <state width="958" height="311" key="GridCell.Tab.0.center" timestamp="1587500216655">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1587547211273">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587500216655" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1587547211273" />
     <state width="958" height="311" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1587494405608" />
-    <state width="958" height="311" key="GridCell.Tab.0.left" timestamp="1587500216653">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1587547211273">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587500216653" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1587547211273" />
     <state width="958" height="311" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1587494405607" />
-    <state width="958" height="311" key="GridCell.Tab.0.right" timestamp="1587500216656">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1587547211274">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587500216656" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1587547211274" />
     <state width="958" height="311" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1587494405609" />
-    <state width="958" height="311" key="GridCell.Tab.1.bottom" timestamp="1587500216658">
+    <state width="958" height="311" key="GridCell.Tab.1.bottom" timestamp="1587500797957">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587500216658" />
+    <state width="958" height="311" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1587500797957" />
     <state width="958" height="311" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1587494405612" />
-    <state width="958" height="311" key="GridCell.Tab.1.center" timestamp="1587500216657">
+    <state width="958" height="311" key="GridCell.Tab.1.center" timestamp="1587500797956">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1587500216657" />
+    <state width="958" height="311" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1587500797956" />
     <state width="958" height="311" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1587494405611" />
-    <state width="958" height="311" key="GridCell.Tab.1.left" timestamp="1587500216657">
+    <state width="958" height="311" key="GridCell.Tab.1.left" timestamp="1587500797955">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1587500216657" />
+    <state width="958" height="311" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1587500797955" />
     <state width="958" height="311" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1587494405611" />
-    <state width="958" height="311" key="GridCell.Tab.1.right" timestamp="1587500216658">
+    <state width="958" height="311" key="GridCell.Tab.1.right" timestamp="1587500797956">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="958" height="311" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1587500216658" />
+    <state width="958" height="311" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1587500797956" />
     <state width="958" height="311" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1587494405611" />
-    <state x="121" y="63" key="SettingsEditor" timestamp="1587293040758">
+    <state x="121" y="63" key="SettingsEditor" timestamp="1587544908896">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="121" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587293040758" />
+    <state x="121" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1587544908896" />
     <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1585046135795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

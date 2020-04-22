@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SystemSuite" duration-ms="55776" started-at="2020-04-22T09:37:12Z" finished-at="2020-04-22T09:38:08Z">
+    <groups>
+    </groups>
+    <test name="SystemTest" duration-ms="55776" started-at="2020-04-22T09:37:12Z" finished-at="2020-04-22T09:38:08Z">
+      <class name="selenium.SysTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:selenium.SysTest@b684286]" name="setUp" is-config="true" duration-ms="4350" started-at="2020-04-22T09:37:12Z" finished-at="2020-04-22T09:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="departmentEditTest()[pri:0, instance:selenium.SysTest@b684286]" name="departmentEditTest" duration-ms="7401" started-at="2020-04-22T09:37:16Z" finished-at="2020-04-22T09:37:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- departmentEditTest -->
+        <test-method status="PASS" signature="departmentPositionEditTest()[pri:0, instance:selenium.SysTest@b684286]" name="departmentPositionEditTest" duration-ms="9472" started-at="2020-04-22T09:37:24Z" finished-at="2020-04-22T09:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- departmentPositionEditTest -->
+        <test-method status="PASS" signature="linkNavigationTest()[pri:0, instance:selenium.SysTest@b684286]" name="linkNavigationTest" duration-ms="6630" started-at="2020-04-22T09:37:33Z" finished-at="2020-04-22T09:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkNavigationTest -->
+        <test-method status="PASS" signature="postypeEditTest()[pri:0, instance:selenium.SysTest@b684286]" name="postypeEditTest" duration-ms="8222" started-at="2020-04-22T09:37:40Z" finished-at="2020-04-22T09:37:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postypeEditTest -->
+        <test-method status="PASS" signature="vacancyPositionEditTest()[pri:0, instance:selenium.SysTest@b684286]" name="vacancyPositionEditTest" duration-ms="8442" started-at="2020-04-22T09:37:48Z" finished-at="2020-04-22T09:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vacancyPositionEditTest -->
+        <test-method status="PASS" signature="workerEditTest()[pri:0, instance:selenium.SysTest@b684286]" name="workerEditTest" duration-ms="10591" started-at="2020-04-22T09:37:56Z" finished-at="2020-04-22T09:38:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workerEditTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:selenium.SysTest@b684286]" name="tearDown" is-config="true" duration-ms="649" started-at="2020-04-22T09:38:07Z" finished-at="2020-04-22T09:38:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.SysTest -->
+    </test> <!-- SystemTest -->
+  </suite> <!-- SystemSuite -->
+</testng-results>

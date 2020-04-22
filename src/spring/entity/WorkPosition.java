@@ -19,7 +19,7 @@ public class WorkPosition {
     private Worker worker_id;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JoinColumn(name = "postype_id", nullable = false)
     private PositionType postype_id;
 
@@ -37,7 +37,7 @@ public class WorkPosition {
     private Double work_rate;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.REMOVE)
+    @ManyToOne
     @JoinColumn(name = "department_id", nullable = false)
     private Department department_id;
 

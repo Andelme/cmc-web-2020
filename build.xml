@@ -59,7 +59,12 @@
     </asadmin>
   </target>
 
-  <target name="all" depends="clean, clean-war, setup-db, build, build-war, start-server, deploy"/>
+  <target name = "run-system-tests" >
+    <ant antfile = "${selenium.dir}/build.xml"/>
+  </target>
+
+  <target name="all" depends="clean, clean-war, setup-db, build, build-war, start-server, deploy, run-system-tests, undeploy, stop-server"/>
   <target name="redeploy" depends="undeploy, clean, clean-war, setup-db, build, build-war, deploy"/>
+  <target name="startup" depends="clean, clean-war, setup-db, build, build-war, start-server, deploy"/>
   <target name="shutdown" depends="undeploy, stop-server"/>
 </project>
