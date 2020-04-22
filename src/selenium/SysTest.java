@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class SysTest {
-    private final String fireFoxDriver = "/Users/Anselm/cmc-web-2020/geckodriver";
+    private final String fireFoxDriver = "/Users/Anselm/cmc-web-2020/geckodriver";//Path to driver
     private WebDriver driver;
 
     @BeforeTest
